@@ -1,6 +1,6 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'Numato Opsis'
-subtitle: 'Sample Code and Developer Documentation'
+subtitle: 'Developer Documentation'
 
 # if you wish to integrate disqus on pages set your shortname here
 disqus_shortname: 'numato-opsis'
