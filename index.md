@@ -1,18 +1,22 @@
 ---
 layout: default
-title: "Jekyll Docs Template"
+title: "Numato Opsis Developer Manual"
 ---
 
-### Get Started
+The [Numato](http://numato.com) Opsis board is the first [HDMI2USB](http://hdmi2usb.tv)
+production board developed in conjugation with the
+[TimVideos.us](http://code.timvideos.us) project. 
 
-Start by [creating a new post](http://jekyllrb.com/docs/posts/) one of the categories listed in `_config.yml`. It will appear in the navigation on the left once recompiled. Or use the supplied script to make creating pages easier:
+It's features include;
 
-```bash
-ruby bin/jekyll-page "Some Page Title" ref
-```
+ * 2 x HDMI input ports,
+ * 2 x HDMI output ports,
+ * DisplayPort input and output ports,
+ * 128Mbit DDR3-1600 ram,
+ * Gigabit Ethernet with MAC address EEPROM,
+ * Micro SD card,
+ * Cypress FX2 for USB device functionality,
+ * ULPI for USB OTG functionality,
+ * Quad speed SPI flash.
 
-#### Don't Forget
-
-- Add your own content to this page (i.e. `index.md`) and change the `title`
-- Change `title` and `subtitle` defined in `config.yml` for your site
-- Set the `baseurl` in `_config.yml` for your repo if deploying to GitHub pages
+![Numato Opsis Image](img/numato-opsis.jpg)
