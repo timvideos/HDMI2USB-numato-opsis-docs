@@ -1,9 +1,10 @@
+---
+layout: page
+title: "USB Peripheral"
+category: features
+---
 
-The 
-[Opsis board by Numato and TimVideos](http://hdmi2usb.tv/opsis).
-includes a 
-[Cypress EZ-USB FX2LP](http://www.cypress.com/?id=193).
-
+The board includes a [Cypress EZ-USB FX2LP](http://www.cypress.com/?id=193).
 
 Cypress’s EZ-USB® FX2LP™ (CY7C68013A/14/15/16A) is a low power, highly
 integrated USB 2.0 microcontroller. FX2LP has a fully configurable General
@@ -21,6 +22,8 @@ The FX2 can be used in the following ways;
    30Megabytes/second - 40Megabytes/second.
 
  * Emulation support for wide range of USB devices.
+
+## Connection
 
 The CY7C68013A_100AC is connected to the FPGA in the following way;
 
@@ -85,3 +88,6 @@ More links
  * http://www.triplespark.net/elec/periph/USB-FX2/
  * https://fpga4u.epfl.ch/wiki/FX2
  * http://ixo-jtag.sourceforge.net/
+
+
+
