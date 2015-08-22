@@ -71,8 +71,7 @@ if not filename
     filename = title.downcase.gsub(/[^a-z0-9\s]/, '').gsub(/\s+/, '-')
 end
 
-today=Date.today().strftime('%F')
-now=DateTime.now().strftime('%F %T')
+today="1980-01-01"
 
 filepath = "#{POSTS_DIR}/#{today}-#{filename}.md"
 symlink = "#{PAGES_DIR}/#{filename}.md"
@@ -87,7 +86,6 @@ content = <<END
 layout: page
 title: \"#{title}\"
 category: #{category}
-date: #{now}
 ---
 
 
