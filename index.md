@@ -4,20 +4,68 @@ title: "Numato Opsis Developer Manual"
 disqus: 0
 ---
 
-The [Numato](http://numato.com) Opsis board is the first [HDMI2USB](http://hdmi2usb.tv)
-production board developed in conjugation with the
-[TimVideos.us](http://code.timvideos.us) project. 
+# Numato Opsis
 
-It's features include;
+The Numato Opsis is the first HDMI2USB production board developed specifically for the HDMI2USB project (as part of the TimVideos project).
 
- * 2 x HDMI input ports,
- * 2 x HDMI output ports,
- * DisplayPort input and output ports,
- * 128Mbit DDR3-1600 ram,
- * Gigabit Ethernet with MAC address EEPROM,
- * Micro SD card,
- * Cypress FX2 for USB device functionality,
- * ULPI for USB OTG functionality,
- * Quad speed SPI flash.
+![Numato Opsis](img/numato-opsis.jpg)
 
-![Numato Opsis Image](img/numato-opsis.jpg)
+## Useful Resources
+
+  * [https://github.com/timvideos/HDMI2USB-numato-opsis-hardware](https://github.com/timvideos/HDMI2USB-numato-opsis-hardware)
+  * [https://github.com/timvideos/HDMI2USB-numato-opsis-sample-code](https://github.com/timvideos/HDMI2USB-numato-opsis-sample-code)
+
+## Technical Specifications
+
+<table class="boards">
+ <tr>
+   <th>FPGA</th>
+   <td>Xilinx Spartan-6 LX45<b>T</b> FPGA</td>
+ </tr>
+ <tr>
+   <th>Memory</th>
+   <td>128Mbyte DDR3</td>
+ </tr>
+ <tr>
+   <th>Video Interfaces</th>
+   <td>
+<ul>
+ <li>2 x HDMI Input, </li>
+ <li>2 x HDMI Output, </li>
+ <li>1 x DisplayPort Input,</li>
+ <li>1 x DisplayPort Output</li>
+</ul>
+   </td>
+ </tr>
+ <tr>
+   <th>Comms</th>
+   <td>
+<ul>
+ <li>FX2 Cypress,</li>
+ <li>Gigabit Ethernet,</li>
+ <li>USB 2.0 OTG</li>
+</ul>
+   </td>
+ </tr>
+ <tr>
+   <th>Storage</th>
+   <td>
+<ul>
+  <li>XXMbyte SPI Flash,</li>
+  <li>SD Card</li>
+</ul>
+   </td>
+ </tr>
+ <tr>
+   <th>Audio</th>
+   <td>None</td>
+ </tr>
+ <tr>
+   <th>Expansion</th>
+   <td>1 x <a href="">TimVideos FPGA Expansion Connector</a></td>
+ </tr>
+ <tr>
+   <th>Power Supply</th>
+   <td>12V @ 1A</td>
+ </tr>
+</table>
