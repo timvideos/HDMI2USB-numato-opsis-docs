@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Numato Opsis Developer Manual"
+disqus: 0
 ---
 
 The [Numato](http://numato.com) Opsis board is the first [HDMI2USB](http://hdmi2usb.tv)
