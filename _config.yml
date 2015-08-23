@@ -21,7 +21,7 @@ codeurl: 'https://github.com/timvideos/HDMI2USB-numato-opsis-sample-code'
 sections: [
     ['getting-started', 'Getting Started'],
     ['features', 'Features'],
-    ['examples', 'Examples'],
+    ['info', 'More Information'],
 ]
 
 # Keep as an empty string if served up at the root. If served up at a specific
