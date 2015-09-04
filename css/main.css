@@ -82,3 +82,28 @@ table td {
     border: 1px solid black;
     padding: 5px;
 }
+
+/* BANNER */
+
+.top-message {
+  text-shadow: none;
+  text-align: center;
+  background: #192228;
+  border: 1px;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+/*
+  border-radius: 25px;
+  border: 2px solid #d8d8d8;
+*/
+  margin: 10px 0px;
+
+}
+
+.top-message a {
+  margin-top: 10px;
+  color: #00b2ad;
+  font-weight: bolder;
+}
+
