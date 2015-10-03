@@ -82,3 +82,46 @@ table td {
     border: 1px solid black;
     padding: 5px;
 }
+
+.note-warning::before {
+    content: "Warning";
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: smaller;
+    position: relative;
+    float: right;
+    top: -1em;
+    background-color: white;
+    border: 1px solid red;
+    padding: 0 3px;
+}
+.note-warning {
+    display: block;
+    border: 1px solid red;
+    background-color: #FFCACA;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.note-preproduction::before {
+    content: "Preproduction difference";
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: smaller;
+    position: relative;
+    float: right;
+    top: -1em;
+    background-color: white;
+    border: 1px solid blue;
+    padding: 0 3px;
+    margin-top: 2px;
+}
+.note-preproduction {
+    display: block;
+    border: 1px solid blue;
+    background-color: #C2C2FF;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}

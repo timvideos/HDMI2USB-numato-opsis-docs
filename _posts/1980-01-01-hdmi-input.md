@@ -12,7 +12,7 @@ The board includes two HDMI inputs.
 |    Computer        |>>>>>>>>|  Opsis Board   |
 |                    |        |                |
 +--------------------+        +----------------+
-``
+```
 
 # HDMI - connector J4 - Direction RX
 ```

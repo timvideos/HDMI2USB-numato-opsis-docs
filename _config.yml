@@ -42,16 +42,22 @@ exclude: ['bin', 'README.md']
 
 # Use the redcarpet Markdown renderer
 markdown: redcarpet
+kramdown: 
+  parse_block_html: true
+  input: GFM
+
 redcarpet:
     extensions: [
         'no_intra_emphasis',
+        'tables',
         'fenced_code_blocks',
         'autolink',
         'strikethrough',
         'superscript',
+        'underline',
+        'highlight',
+        'footnotes',
         'with_toc_data',
-        'tables',
-        'hardwrap'
     ]
 
 defaults:
