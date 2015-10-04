@@ -65,6 +65,7 @@ On boot, the FX2 will try and load it's firmware from an EEPROM connected to
 the I2C controller.
 
 There are three booting modes possible for the FX2 on the Opsis board;
+
  * If no valid EEPROM is found, the FX2 will boot in "failsafe mode".
  * If the real EEPROM is found, the FX2 will boot in 
    "Opsis USB unconfigured mode."
