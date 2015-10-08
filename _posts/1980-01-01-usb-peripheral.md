@@ -76,7 +76,7 @@ There are three booting modes possible for the FX2 on the Opsis board;
 
 <hr>
 
-#### Failsafe Booting
+#### Failsafe Mode - Unable to read EEPROM
 
 This mode is useful when bad information has been written to the EEPROM or the
 FPGA is preventing correct reading of the EEPROM (and thus the FX2 from
@@ -119,7 +119,7 @@ In the schematic, JFX2-SDA1 / P18 jumper is found in the USB sheet.
 
 <hr>
 
-#### Real EEPROM Booting
+#### Unconfigured Mode - Real EEPROM Booting
 
 The Opsis board has a 
 [a Microchip 24AA02E48 2048 kbit EEPROM](http://www.microchip.com/wwwproducts/Devices.aspx?product=24AA02E48)
@@ -141,6 +141,8 @@ JMAC-ADR / K1 jumper between Pin 2 and Pin 3, pulling the **A2** pin low. (The
 In this mode the FX2 will connect to USB and appear a "Unconfigured Cypress
 FX2" with the VID and PID of <span class="fixme">**XXXX:XXXX**</span>. Under
 Linux it will appear in lsusb as something like this;
+
+
 
 ```
 # Bus 003 Device 091: ID XXXX:XXXX Numato Opsis FPGA based open video platform (unconfigured).
