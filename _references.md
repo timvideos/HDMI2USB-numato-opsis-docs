@@ -43,6 +43,7 @@
 
 <!-- Project links -->
 
+ [fx2lib]: http://github.com/mithro/fx2lib
  [ixo-usb-jtag]: http://github.com/mithro/ixo-usb-jtag
  [TimVideos]: http://code.timvideos.us/
  [HDMI2USB.tv]: http://hdmi2usb.tv/
