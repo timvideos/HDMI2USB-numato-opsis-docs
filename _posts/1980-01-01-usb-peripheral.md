@@ -31,13 +31,13 @@ The FX2 can be used in the following ways;
 For the FX2 to boot, the RESET# pin needs to go high. 
 
 So the FPGA can reset the FX2, the RESET# pin is connected to the FPGA 
-[[Pin G22]] via jumper JFX2-RST / PXX and a decoupling RC circuit.
+[Pin G22] via jumper JFX2-RST / PXX and a decoupling RC circuit.
 
 The RC decoupling circuit will cause the RESET# pin to go high even if the FPGA
-is pulling [[Pin G22]] low after XXX ms.
+is pulling [Pin G22] low after XXX ms.
 
-If the [[FPGA SPI flash]] is loaded with a gateware which continually toggles
-[[Pin G22]] low, thus preventing the FX2 from booting properly, the FPGA can be
+If the [FPGA SPI flash] is loaded with a gateware which continually toggles
+[Pin G22] low, thus preventing the FX2 from booting properly, the FPGA can be
 disconnected by removing JFX2-RST / PXX jumper allowing the FX2 to boot.
 
 <span class="note-preproduction">
@@ -48,11 +48,11 @@ The preproduction hardware does not have the JFX2-RST / PXX Jumper.
 The preproduction hardware "failsafe" circuit on the FX2 reset line
 [is incorrect](https://github.com/timvideos/HDMI2USB-numato-opsis-hardware/issues/8). 
 <br>
-This means that if the FPGA pulls [[Pin G22]] low the **FX2 will never boot**!
+This means that if the FPGA pulls [Pin G22] low the **FX2 will never boot**!
 <br>
-If the [[FPGA SPI flash]] contains no firmware or firmware which has this behaviour
+If the [FPGA SPI flash] contains no firmware or firmware which has this behaviour
 the only way to recover is to use an external JTAG programmer to rewrite the
-[[FPGA SPI flash]] content.
+[FPGA SPI flash] content.
 </span>
 
 #### Location of JFX2-RST / PXX Jumper
@@ -142,8 +142,6 @@ In this mode the FX2 will connect to USB and appear a "Unconfigured Cypress
 FX2" with the VID and PID of <span class="fixme">**XXXX:XXXX**</span>. Under
 Linux it will appear in lsusb as something like this;
 
-
-
 ```
 # Bus 003 Device 091: ID XXXX:XXXX Numato Opsis FPGA based open video platform (unconfigured).
 ```
@@ -173,10 +171,10 @@ Pin 2 is the **middle** pin and labelled **ADDR2**.
 Pin 3 is the furthest from the FX2 IC and labelled **GND**.
 
 Connecting the jumper **between Pin 1 and Pin 2** causes the **A2** pin on the
-[[MAC EEPROM]] to be pulled high.
+[MAC EEPROM] to be pulled high.
 
 Connecting the jumper **between Pin 2 and Pin 3** causes the **A2** pin on the
-[[MAC EEPROM]] to be pulled low.
+[MAC EEPROM] to be pulled low.
 
 <span class="note-warning">
 <b>Never</b> connect Pin 1 and Pin 3 together, this will short VCC to GND and
