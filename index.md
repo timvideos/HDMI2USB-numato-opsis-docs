@@ -66,6 +66,6 @@ The Numato Opsis is the first HDMI2USB production board developed specifically f
  </tr>
  <tr>
    <th>Power Supply</th>
-   <td>12V @ 1A</td>
+   <td>12V @ 2A</td>
  </tr>
 </table>
