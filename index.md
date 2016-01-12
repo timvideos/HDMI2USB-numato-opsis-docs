@@ -62,7 +62,7 @@ The Numato Opsis is the first HDMI2USB production board developed specifically f
  </tr>
  <tr>
    <th>Expansion</th>
-   <td>1 x <a href="">TimVideos FPGA Expansion Connector</a></td>
+   <td>1 x <a href="http://tofe.io">Tim's Open FPGA Expansion Interface</a></td>
  </tr>
  <tr>
    <th>Power Supply</th>
