@@ -11,6 +11,8 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/toc.css">
+
     </head>
     <body>
 
@@ -46,6 +48,8 @@
         
         
             <li><a href="/getting-started/overview.html">Overview</a></li>
+        
+            <li><a href="/getting-started/layout.html">Layout</a></li>
         
             <li><a href="/getting-started/case.html">Case</a></li>
         
@@ -93,9 +97,11 @@
         <li class="nav-header">More Information</li>
         
         
-            <li><a href="/info/contact-us.html">Contact Numato</a></li>
+            <li><a href="/info/contact-numato.html">Contact Numato</a></li>
         
             <li><a href="/info/license.html">License</a></li>
+        
+            <li><a href="/info/video-info-faq.html">Video FAQ</a></li>
         
     
     <li class="nav-header">Repositories</li>
@@ -112,12 +118,18 @@
 
                     <div id="content" class="col-sm-10">
                         <div class="page-header">
-    <h2>Info EEPROM
+    <h1>Info EEPROM
         
-    </h2>
+    </h1>
+
+<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li><a href="#fx2-configuration"><span class="tocnumber">1</span> <span class="toctext">FX2 Configuration</span></a></li><li><a href="#opsis-board-information"><span class="tocnumber">2</span> <span class="toctext">Opsis Board Information</span></a></li><li><a href="#microchip-eeprom-read-only-section"><span class="tocnumber">3</span> <span class="toctext">Microchip EEPROM Read Only Section</span></a></li></ul></td></tr></tbody></table></div>
+
 </div>
 
-<p><a href="https://docs.google.com/document/d/14ygLbeHLRzve7zQGckZd9PGwuAYAPxIO91IWQC_lq8I/edit#">Google Docs Version</a></p>
+
+<p>
+  <a href="https://docs.google.com/document/d/14ygLbeHLRzve7zQGckZd9PGwuAYAPxIO91IWQC_lq8I/edit#">Google Docs Version</a>
+</p>
 
 <h1 id="opsis-eeprom-ic">Opsis EEPROM IC</h1>
 
@@ -143,7 +155,7 @@
 <h2 id="fx2-configuration">FX2 Configuration</h2>
 
 <p>| Hex Address | Value | Description                        |
-| 0x00        | 0xC0  | FX2 &#39;C0 Load&#39; Format specifier     |
+| 0x00        | 0xC0  | FX2 'C0 Load' Format specifier     |
 | 0x01        | 0x19  | FX2 Vendor ID (Lower bits)  0x2A19 |
 | 0x02        | 0x2A  | FX2 Vendor ID (Higher bits)        |
 | 0x03        | 0x40  | FX2 Product ID (Lower bits) 0x5440 |

@@ -3,6 +3,10 @@ body {
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
 }
 
+div#content img {
+    width: 100%;
+}
+
 pre, code {
     border: none;
     border-radius: 0;
@@ -50,6 +54,8 @@ code {
 #navigation li a {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 #navigation .nav-header {
@@ -130,4 +136,75 @@ table th {
     width: 100%;
     padding: 5px;
     margin: 5px;
+}
+
+ul li:last-child {
+    padding-bottom: 0.4em;
+}
+
+span.hi-fpga {
+    background: #8E1282;
+    color: white;
+}
+
+span.hi-gtp {
+    background: #DDC15E;
+}
+
+span.hi-gtp-in {
+    background: #E0AA62;
+}
+
+span.hi-gtp-out {
+    background: #DAC15D;
+}
+
+span.hi-hdmi {
+    background: #326AA5;
+    color: white;
+}
+
+span.hi-hdmi-in {
+    background: #0D0D91;
+    color: white;
+}
+
+span.hi-hdmi-out {
+    background: #70A7E0;
+}
+
+span.hi-usb {
+    background: #12952D;
+    color: white;
+}
+
+span.hi-usb-otg {
+    background: #386143;
+    color: white;
+}
+
+span.hi-usb-fx2 {
+    background: #36B84E;
+}
+
+span.hi-tofe {
+    background: #00807C;
+    color: white;
+}
+
+span.hi-sdcard {
+    background: #ADA081;
+}
+
+span.hi-ethernet {
+    background: #67138C;
+    color: white;
+}
+
+span.hi-yellow {
+    background: #EEEF6F;
+}
+
+span.hi-power {
+    background: red;
 }

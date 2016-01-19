@@ -11,6 +11,8 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/toc.css">
+
     </head>
     <body>
 
@@ -46,6 +48,8 @@
         
         
             <li><a href="/getting-started/overview.html">Overview</a></li>
+        
+            <li><a href="/getting-started/layout.html">Layout</a></li>
         
             <li><a href="/getting-started/case.html">Case</a></li>
         
@@ -93,9 +97,11 @@
         <li class="nav-header">More Information</li>
         
         
-            <li><a href="/info/contact-us.html">Contact Numato</a></li>
+            <li><a href="/info/contact-numato.html">Contact Numato</a></li>
         
             <li><a href="/info/license.html">License</a></li>
+        
+            <li><a href="/info/video-info-faq.html">Video FAQ</a></li>
         
     
     <li class="nav-header">Repositories</li>
@@ -112,10 +118,14 @@
 
                     <div id="content" class="col-sm-10">
                         <div class="page-header">
-    <h2>Power Supply
+    <h1>Power Supply
         
-    </h2>
+    </h1>
+
+<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li><a href="#summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li><li><a href="#connectors"><span class="tocnumber">2</span> <span class="toctext">Connectors</span></a><ul><li><a href="#barrel-connector"><span class="tocnumber">2.1</span> <span class="toctext">Barrel Connector</span></a></li><li><a href="#pcie-6-pin-connector"><span class="tocnumber">2.2</span> <span class="toctext">PCIe 6-Pin Connector</span></a></li></ul></li><li><a href="#extra-details"><span class="tocnumber">3</span> <span class="toctext">Extra Details</span></a></li></ul></td></tr></tbody></table></div>
+
 </div>
+
 
 <p>The primary power supply for the Opsis board is 12V DC. </p>
 
@@ -131,32 +141,40 @@ increase the current requirements.</p>
 <li>Minimum: 12V DC @ 2A (24 Watts)</li>
 </ul>
 
-<hr>
+<hr />
 
 <h2 id="connectors">Connectors</h2>
 
 <p>There are two power supply connectors on the Opsis board. </p>
 
-<p><img src="/img/power/connectors.jpg" alt="Power Supply Diagram"></p>
+<p>
+  <img src="/img/power/connectors.jpg" alt="Power Supply Diagram" />
+</p>
 
-<p><span class="note-warning">
+<p>
+  <span class="note-warning">
 Only <em>one</em> power supply connector should be used at once.
-</span></p>
+</span>
+</p>
 
-<p><br>
-<br>
-<br></p>
+<p><br />
+<br />
+<br /></p>
 
 <h3 id="barrel-connector">Barrel Connector</h3>
 
-<p><img src="/img/power/polarity.png" alt="Polarity"></p>
+<p>
+  <img src="/img/power/polarity.png" alt="Polarity" />
+</p>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th style="text-align: right">Specs</th>
 <th></th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td style="text-align: right">Labelled</td>
 <td>Con2</td>
@@ -177,50 +195,68 @@ Only <em>one</em> power supply connector should be used at once.
 <td style="text-align: right">Outer Shield</td>
 <td>GND</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<p><br></p>
+<p>
+  <br />
+</p>
 
-<p><img src="/img/power/barrel.jpg" alt="Barrel Connector"></p>
+<p>
+  <img src="/img/power/barrel.jpg" alt="Barrel Connector" />
+</p>
 
-<hr>
+<hr />
 
-<p><br>
-<br>
-<br></p>
+<p><br />
+<br />
+<br /></p>
 
 <h3 id="pcie-6-pin-connector">PCIe 6-Pin Connector</h3>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th style="text-align: right">Specs</th>
 <th></th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td style="text-align: right">Labelled</td>
 <td>C12V-2</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<p><br></p>
+<p>
+  <br />
+</p>
 
-<p><img src="/img/power/pcie-6pin.jpg" alt="PCIe 6-Pin Connector"></p>
+<p>
+  <img src="/img/power/pcie-6pin.jpg" alt="PCIe 6-Pin Connector" />
+</p>
 
-<p><span class="note-warning">
+<p>
+  <span class="note-warning">
 There are a number of power connectors which look similar to the PCIe 6-Pin
 which are <em>not</em> compatible with the Opsis board.
-</span></p>
+</span>
+</p>
 
-<p><img src="/img/power/standard-pcie-6pin.png" alt="PCIe 6-Pin Standard"></p>
+<p>
+  <img src="/img/power/standard-pcie-6pin.png" alt="PCIe 6-Pin Standard" />
+</p>
 
-<p><img src="/img/power/pcie-6pin-plug.jpg" alt="PCIe 6-Pin Plug"></p>
+<p>
+  <img src="/img/power/pcie-6pin-plug.jpg" alt="PCIe 6-Pin Plug" />
+</p>
 
-<hr>
+<hr />
 
-<p><br>
-<br>
-<br></p>
+<p><br />
+<br />
+<br /></p>
 
 <h2 id="extra-details">Extra Details</h2>
 
@@ -234,7 +270,9 @@ following diagram;</p>
 <li>The output of each supply is highlighted by the yellow area.</li>
 </ul>
 
-<p><img src="/img/power/convert.jpg" alt="Power Converters"></p>
+<p>
+  <img src="/img/power/convert.jpg" alt="Power Converters" />
+</p>
 
 <iframe src="https://docs.google.com/spreadsheets/d/1kLR7yQlwvc1OU9FH1j3vCp9KJMV8PBOriW9cUIGDIvM/pubhtml?widget=true&amp;headers=false"></iframe>
 

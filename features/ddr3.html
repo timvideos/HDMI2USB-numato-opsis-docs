@@ -11,6 +11,8 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/toc.css">
+
     </head>
     <body>
 
@@ -46,6 +48,8 @@
         
         
             <li><a href="/getting-started/overview.html">Overview</a></li>
+        
+            <li><a href="/getting-started/layout.html">Layout</a></li>
         
             <li><a href="/getting-started/case.html">Case</a></li>
         
@@ -93,9 +97,11 @@
         <li class="nav-header">More Information</li>
         
         
-            <li><a href="/info/contact-us.html">Contact Numato</a></li>
+            <li><a href="/info/contact-numato.html">Contact Numato</a></li>
         
             <li><a href="/info/license.html">License</a></li>
+        
+            <li><a href="/info/video-info-faq.html">Video FAQ</a></li>
         
     
     <li class="nav-header">Repositories</li>
@@ -112,14 +118,18 @@
 
                     <div id="content" class="col-sm-10">
                         <div class="page-header">
-    <h2>DDR3
+    <h1>DDR3
         
-    </h2>
+    </h1>
+
+<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li><a href="#using-xilinx-mcb-generator"><span class="tocnumber">1</span> <span class="toctext">Using Xilinx MCB Generator</span></a></li><li><a href="#using-misoc"><span class="tocnumber">2</span> <span class="toctext">Using MiSoC</span></a></li></ul></td></tr></tbody></table></div>
+
 </div>
+
 
 <p>The DDR3 RAM is <code>MT41J128M16JT-125:K</code> connected to MCB3 of the FPGA.</p>
 
-<p>The RAM is compatible with both the Xilinx&#39;s MCB generator inside ISE and the DDR core inside misoc.</p>
+<p>The RAM is compatible with both the Xilinx's MCB generator inside ISE and the DDR core inside misoc.</p>
 
 <p>The limiting factor on the speed of operation is the SERDES functionality in the Spartan 6 FPGA.</p>
 
@@ -132,12 +142,14 @@
 <p>The code D9PSL on the IC can be decoded at <a href="http://www.micron.com/support/fbga">http://www.micron.com/support/fbga</a> and should give;
  <code>MT41J128M16JT-125:K - 16 Meg x 16 x 8 Banks - DDR3-1600 11-11-11</code></p>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th style="text-align: right"></th>
 <th>Specification</th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td style="text-align: right">Schematic Sheet</td>
 <td><a href="https://github.com/timvideos/HDMI2USB-numato-opsis-hardware/blob/master/board/DDR3.sch">DDR3.sch</a></td>
@@ -170,9 +182,12 @@
 <td style="text-align: right">Max Data Rate</td>
 <td>DDR3-1600</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<p><img src="img/ddr3-ram.jpg" alt="DDR3 Ram Picture"></p>
+<p>
+  <img src="img/ddr3-ram.jpg" alt="DDR3 Ram Picture" />
+</p>
 
 <h2 id="using-xilinx-mcb-generator">Using Xilinx MCB Generator</h2>
 

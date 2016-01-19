@@ -11,6 +11,8 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/toc.css">
+
     </head>
     <body>
 
@@ -46,6 +48,8 @@
         
         
             <li><a href="/getting-started/overview.html">Overview</a></li>
+        
+            <li><a href="/getting-started/layout.html">Layout</a></li>
         
             <li><a href="/getting-started/case.html">Case</a></li>
         
@@ -93,9 +97,11 @@
         <li class="nav-header">More Information</li>
         
         
-            <li><a href="/info/contact-us.html">Contact Numato</a></li>
+            <li><a href="/info/contact-numato.html">Contact Numato</a></li>
         
             <li><a href="/info/license.html">License</a></li>
+        
+            <li><a href="/info/video-info-faq.html">Video FAQ</a></li>
         
     
     <li class="nav-header">Repositories</li>
@@ -112,10 +118,14 @@
 
                     <div id="content" class="col-sm-10">
                         <div class="page-header">
-    <h2>USB Peripheral
+    <h1>USB Peripheral
         
-    </h2>
+    </h1>
+
+<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li><a href="#booting"><span class="tocnumber">1</span> <span class="toctext">Booting</span></a><ul><li><a href="#cypress-fx2-reset-circuit"><span class="tocnumber">1.1</span> <span class="toctext">Cypress FX2 Reset Circuit</span></a><ul><li><a href="#location-of-jfx2-rst-/-pxx-jumper"><span class="tocnumber">1.1.1</span> <span class="toctext">Location of JFX2-RST / PXX Jumper</span></a></li></ul></li><li><a href="#i2c-booting"><span class="tocnumber">1.2</span> <span class="toctext">I2C Booting</span></a><ul><li><a href="#failsafe-mode---unable-to-read-eeprom"><span class="tocnumber">1.2.1</span> <span class="toctext">Failsafe Mode - Unable to read EEPROM</span></a><ul><li><a href="#location-of-jfx2-sda1-/-p18-jumper"><span class="tocnumber">1.2.1.1</span> <span class="toctext">Location of JFX2-SDA1 / P18 Jumper</span></a></li></ul></li><li><a href="#unconfigured-mode---real-eeprom-booting"><span class="tocnumber">1.2.2</span> <span class="toctext">Unconfigured Mode - Real EEPROM Booting</span></a><ul><li><a href="#location-of-mac-eeprom-(umac1-/-u23)"><span class="tocnumber">1.2.2.1</span> <span class="toctext">Location of MAC EEPROM (UMAC1 / U23)</span></a></li><li><a href="#location-of-jmac-adr-/-k1-jumper"><span class="tocnumber">1.2.2.2</span> <span class="toctext">Location of JMAC-ADR / K1 Jumper</span></a></li></ul></li><li><a href="#fpga-&quot;virtual-eeprom&quot;-booting"><span class="tocnumber">1.2.3</span> <span class="toctext">FPGA "virtual EEPROM" booting</span></a></li></ul></li></ul></li><li><a href="#connection"><span class="tocnumber">2</span> <span class="toctext">Connection</span></a></li></ul></td></tr></tbody></table></div>
+
 </div>
+
 
 <p>The board includes a <a href="http://www.cypress.com/?id=193">Cypress EZ-USB FX2LP</a>.</p>
 
@@ -135,6 +145,22 @@ such as ATA, UTOPIA, EPP, PCMCIA, DSP, and most processors.</p>
 <li><p>Emulation support for wide range of USB devices.</p></li>
 </ul>
 
+<h4 id="usb-layout">USB Layout</h4>
+
+<ul>
+<li>USB;
+
+<ul>
+<li><span class="hi-usb-otg">USB OTG</span> (Host or Device) is highlighted in <span class="hi-usb-otg">Dark Green</span></li>
+<li><span class="hi-usb-fx2">USB Peripheral</span> (Device Only) is highlighted in <span class="hi-usb-fx2">Light Green</span></li>
+</ul></li>
+<li>Parts shared between Ethernet and USB Peripheral are highlighted in a checkerboard fashion.</li>
+</ul>
+
+<p>
+  <img src="/img/highlights/USB.jpg" alt="USB on the Opsis" />
+</p>
+
 <h2 id="booting">Booting</h2>
 
 <h3 id="cypress-fx2-reset-circuit">Cypress FX2 Reset Circuit</h3>
@@ -151,20 +177,24 @@ is pulling <a href="/???">Pin G22</a> low after XXX ms.</p>
 <a href="/???">Pin G22</a> low, thus preventing the FX2 from booting properly, the FPGA can be
 disconnected by removing JFX2-RST / PXX jumper allowing the FX2 to boot.</p>
 
-<p><span class="note-preproduction">
+<p>
+  <span class="note-preproduction">
 The preproduction hardware does not have the JFX2-RST / PXX Jumper.
-</span></p>
+</span>
+</p>
 
-<p><span class="note-preproduction">
-The preproduction hardware &quot;failsafe&quot; circuit on the FX2 reset line
+<p>
+  <span class="note-preproduction">
+The preproduction hardware "failsafe" circuit on the FX2 reset line
 <a href="https://github.com/timvideos/HDMI2USB-numato-opsis-hardware/issues/8">is incorrect</a>. 
-<br>
+<br />
 This means that if the FPGA pulls <a href="/???">Pin G22</a> low the <strong>FX2 will never boot</strong>!
-<br>
+<br />
 If the <a href="/features/spi-flash.html">FPGA SPI flash</a> contains no firmware or firmware which has this behaviour
 the only way to recover is to use an external JTAG programmer to rewrite the
 <a href="/features/spi-flash.html">FPGA SPI flash</a> content.
-</span></p>
+</span>
+</p>
 
 <h4 id="location-of-jfx2-rst-/-pxx-jumper">Location of JFX2-RST / PXX Jumper</h4>
 
@@ -172,22 +202,24 @@ the only way to recover is to use an external JTAG programmer to rewrite the
 
 <h3 id="i2c-booting">I2C Booting</h3>
 
-<p>On boot, the FX2 will try and load it&#39;s firmware from an EEPROM connected to
+<p>On boot, the FX2 will try and load it's firmware from an EEPROM connected to
 the I2C controller.</p>
 
 <p>There are three booting modes possible for the FX2 on the Opsis board;</p>
 
 <ul>
-<li>If no valid EEPROM is found, the FX2 will boot in &quot;failsafe mode&quot;.</li>
+<li>If no valid EEPROM is found, the FX2 will boot in "failsafe mode".</li>
 <li>If the real EEPROM is found, the FX2 will boot in 
-&quot;Opsis USB unconfigured mode.&quot;</li>
+"Opsis USB unconfigured mode."</li>
 <li>If a virtual EEPROM is found (provided via the FPGA), the FX2 will boot with
 a mode selected by the FPGA.</li>
 </ul>
 
-<p><img src="/img/cypress-fx2/i2c.png" alt="Cypress FX2 I2C bus configuration"></p>
+<p>
+  <img src="/img/cypress-fx2/i2c.png" alt="Cypress FX2 I2C bus configuration" />
+</p>
 
-<hr>
+<hr />
 
 <h4 id="failsafe-mode---unable-to-read-eeprom">Failsafe Mode - Unable to read EEPROM</h4>
 
@@ -200,19 +232,25 @@ jumper disconnects the I2C data line of the FX2 from <strong>all</strong> other 
 the FX2 will be unable to find an EEPROM to boot from, it will come up in
 failsafe mode.</p>
 
-<p>The FX2 will connect to USB and appear a &quot;Unconfigured Cypress FX2&quot; with the
+<p>The FX2 will connect to USB and appear a "Unconfigured Cypress FX2" with the
 VID and PID of <strong>04b4:8613</strong>. Under Linux it will appear in lsusb as something
 like this;</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"># Bus 003 Device 091: ID 04b4:8613 Cypress Semiconductor Corp. CY7C68013 EZ-USB FX2 USB 2.0 Development Kit
-</code></pre></div>
+<div class="highlight">
+  <pre>
+    <code class="language-text" data-lang="text"># Bus 003 Device 091: ID 04b4:8613 Cypress Semiconductor Corp. CY7C68013 EZ-USB FX2 USB 2.0 Development Kit
+</code>
+  </pre>
+</div>
 <p>After booting in this mode, you can then use the USB firmware loading
 functionality to reprogram EEPROM / SPI flash.</p>
 
-<p><span class="note-warning">
+<p>
+  <span class="note-warning">
 After booting in failsafe mode, if you wish to program EEPROM you need to put
 the JFX2-SDA1 / P18 jumper back on <strong>without rebooting the FX2</strong>. This means it
 must be done while power is still supplied to the board.
-</span></p>
+</span>
+</p>
 
 <h5 id="location-of-jfx2-sda1-/-p18-jumper">Location of JFX2-SDA1 / P18 Jumper</h5>
 
@@ -222,11 +260,13 @@ It can be found just north-east from the Cypress FX2 IC. </p>
 
 <p>See the annotated reference image below;</p>
 
-<p><img src="/img/cypress-fx2/p18.jpg" alt="P18 Jumper location"></p>
+<p>
+  <img src="/img/cypress-fx2/p18.jpg" alt="P18 Jumper location" />
+</p>
 
 <p>In the schematic, JFX2-SDA1 / P18 jumper is found in the USB sheet.</p>
 
-<hr>
+<hr />
 
 <h4 id="unconfigured-mode---real-eeprom-booting">Unconfigured Mode - Real EEPROM Booting</h4>
 
@@ -234,11 +274,11 @@ It can be found just north-east from the Cypress FX2 IC. </p>
 <a href="http://www.microchip.com/wwwproducts/Devices.aspx?product=24AA02E48">a Microchip 24AA02E48 2048 kbit EEPROM</a>
 connected to the FX2.</p>
 
-<p>The EEPROM&#39;s primary purpose is to provide a unique MAC address for the
+<p>The EEPROM's primary purpose is to provide a unique MAC address for the
 Ethernet (which is why it is found in the Ethernet sheet in the schematic) but
 the user configurable section has been programmed with some extra useful
 content;
- * A Cypress FX2 &quot;fallback boot config&quot;.
+ * A Cypress FX2 "fallback boot config".
  * Information about the hardware board revision, manufacture date and batch.</p>
 
 <p>This allows FX2 to be identified as a Numato Opsis board even when the FPGA is
@@ -247,14 +287,20 @@ be configured with an address of <strong>0b000</strong>. This is done by putting
 JMAC-ADR / K1 jumper between Pin 2 and Pin 3, pulling the <strong>A2</strong> pin low. (The
 <strong>A0</strong> and <strong>A1</strong> are permanently pulled low.)</p>
 
-<p>In this mode the FX2 will connect to USB and appear a &quot;Unconfigured Cypress
-FX2&quot; with the VID and PID of <span class="fixme"><strong>XXXX:XXXX</strong></span>. Under
+<p>In this mode the FX2 will connect to USB and appear a "Unconfigured Cypress
+FX2" with the VID and PID of <span class="fixme"><strong>XXXX:XXXX</strong></span>. Under
 Linux it will appear in lsusb as something like this;</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"># Bus 003 Device 091: ID XXXX:XXXX Numato Opsis FPGA based open video platform (unconfigured).
-</code></pre></div>
-<p><span class="note-preproduction">
+<div class="highlight">
+  <pre>
+    <code class="language-text" data-lang="text"># Bus 003 Device 091: ID XXXX:XXXX Numato Opsis FPGA based open video platform (unconfigured).
+</code>
+  </pre>
+</div>
+<p>
+  <span class="note-preproduction">
 Preproduction boards where shipped booting into this mode by default.
-</span></p>
+</span>
+</p>
 
 <h5 id="location-of-mac-eeprom-(umac1-/-u23)">Location of MAC EEPROM (UMAC1 / U23)</h5>
 
@@ -264,7 +310,9 @@ The MAC EEPROM is a 8 pin SOIC chip.</p>
 
 <p>See the annotated reference image below;</p>
 
-<p><img src="/img/cypress-fx2/mac-eeprom.jpg" alt="MAC EEPROM location"></p>
+<p>
+  <img src="/img/cypress-fx2/mac-eeprom.jpg" alt="MAC EEPROM location" />
+</p>
 
 <h5 id="location-of-jmac-adr-/-k1-jumper">Location of JMAC-ADR / K1 Jumper</h5>
 
@@ -282,33 +330,39 @@ Pin 3 is the furthest from the FX2 IC and labelled <strong>GND</strong>.</p>
 <p>Connecting the jumper <strong>between Pin 2 and Pin 3</strong> causes the <strong>A2</strong> pin on the
 <a href="/features/eeprom.html">MAC EEPROM</a> to be pulled low.</p>
 
-<p><span class="note-warning">
+<p>
+  <span class="note-warning">
 <b>Never</b> connect Pin 1 and Pin 3 together, this will short VCC to GND and
 potentially damage the board!
-</span></p>
+</span>
+</p>
 
 <p>See the annotated reference image below;</p>
 
-<p><img src="/img/cypress-fx2/k1.jpg" alt="K1 Jumper location"></p>
+<p>
+  <img src="/img/cypress-fx2/k1.jpg" alt="K1 Jumper location" />
+</p>
 
 <p>In the schematic, JFX2-ADR1 / K1 jumper is found in the Ethernet sheet.</p>
 
-<p><span class="note-preproduction">
+<p>
+  <span class="note-preproduction">
 On the preproduction board th JMAC-ADR / K1 Jumper is labelled as JEEADDR.
-</span></p>
+</span>
+</p>
 
-<hr>
+<hr />
 
-<h4 id="fpga-&quot;virtual-eeprom&quot;-booting">FPGA &quot;virtual EEPROM&quot; booting</h4>
+<h4 id="fpga-&quot;virtual-eeprom&quot;-booting">FPGA "virtual EEPROM" booting</h4>
 
-<p>As the FPGA is connected to the FX2&#39;s I2C bus, the FPGA can emulate a &quot;virtual
-EEPROM&quot; and provide the FX2 with firmware. </p>
+<p>As the FPGA is connected to the FX2's I2C bus, the FPGA can emulate a "virtual
+EEPROM" and provide the FX2 with firmware. </p>
 
 <p>This allows the firmware provided to the FX2 to be different depending on
 things like the reset switch state during boot (and thus the type of device the
 Opsis board appears as).</p>
 
-<hr>
+<hr />
 
 <h2 id="connection">Connection</h2>
 
@@ -363,7 +417,7 @@ Slave FIFO mode.</li>
 
 <ul>
 <li>Small EEPROM for storing VID+PID</li>
-<li>FPGA to allow full 16k ROM to be stored in FPGA&#39;s SPI flash</li>
+<li>FPGA to allow full 16k ROM to be stored in FPGA's SPI flash</li>
 </ul></li>
 <li><p>Additional Timer 0 and INT5# connectivity.</p></li>
 <li><p>Reset controllable via FPGA with fail safe pull up.</p></li>

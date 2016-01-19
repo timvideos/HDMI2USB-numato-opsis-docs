@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Numato Opsis : GTP Transceivers</title>
+        <title>Numato Opsis : Layout</title>
         <meta name="description" content="Developer Documentation">
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -118,14 +118,54 @@
 
                     <div id="content" class="col-sm-10">
                         <div class="page-header">
-    <h1>GTP Transceivers
+    <h1>Layout
         
     </h1>
 
-<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li><a href="#displayport-(gtp-transceivers)-layout"><span class="tocnumber">1</span> <span class="toctext">DisplayPort (GTP Transceivers) Layout</span></a></li></ul></td></tr></tbody></table></div>
+<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li><a href="#board-layout"><span class="tocnumber">1</span> <span class="toctext">Board Layout</span></a></li><li><a href="#fpga-&amp;-memory-layout"><span class="tocnumber">2</span> <span class="toctext">FPGA &amp; Memory Layout</span></a></li><li><a href="#video-layout"><span class="tocnumber">3</span> <span class="toctext">Video Layout</span></a><ul><li><a href="#displayport-(gtp-transceivers)-layout"><span class="tocnumber">3.1</span> <span class="toctext">DisplayPort (GTP Transceivers) Layout</span></a></li><li><a href="#hdmi-layout"><span class="tocnumber">3.2</span> <span class="toctext">HDMI Layout</span></a></li></ul></li><li><a href="#connectivity"><span class="tocnumber">4</span> <span class="toctext">Connectivity</span></a><ul><li><a href="#ethernet-layout"><span class="tocnumber">4.1</span> <span class="toctext">Ethernet Layout</span></a></li><li><a href="#usb-layout"><span class="tocnumber">4.2</span> <span class="toctext">USB Layout</span></a></li></ul></li><li><a href="#expansion-layout"><span class="tocnumber">5</span> <span class="toctext">Expansion Layout</span></a><ul><li><a href="#sd-card-layout"><span class="tocnumber">5.1</span> <span class="toctext">SD Card Layout</span></a></li><li><a href="#tofe-layout"><span class="tocnumber">5.2</span> <span class="toctext">TOFE Layout</span></a></li></ul></li><li><a href="#config-&amp;-status-layout"><span class="tocnumber">6</span> <span class="toctext">Config &amp; Status Layout</span></a><ul><li><a href="#jumper-layout"><span class="tocnumber">6.1</span> <span class="toctext">Jumper Layout</span></a></li><li><a href="#leds-layout"><span class="tocnumber">6.2</span> <span class="toctext">LEDs Layout</span></a></li></ul></li><li><a href="#supporting-component-layout"><span class="tocnumber">7</span> <span class="toctext">Supporting Component Layout</span></a><ul><li><a href="#clock-layout"><span class="tocnumber">7.1</span> <span class="toctext">Clock Layout</span></a></li><li><a href="#power-layout"><span class="tocnumber">7.2</span> <span class="toctext">Power Layout</span></a></li></ul></li></ul></td></tr></tbody></table></div>
 
 </div>
 
+
+<h3 id="board-layout">Board Layout</h3>
+
+<ul>
+<li><span class="hi-fpga">FPGA &amp; Memory</span> - Highlighted in <span class="hi-fpga">Pink</span></li>
+<li>Video
+
+<ul>
+<li><span class="hi-gtp">DisplayPort (GTP Transceivers)</span> - Highlighted in <span class="hi-gtp">Yellow</span></li>
+<li><span class="hi-hdmi">HDMI</span> - Highlighted in <span class="hi-hdmi">Blue</span></li>
+</ul></li>
+<li>Connectivity
+
+<ul>
+<li><span class="hi-ethernet">Ethernet</span> - Highlighted in <span class="hi-ethernet">Purple</span></li>
+<li><span class="hi-usb">USB</span> - Highlighted in <span class="hi-usb">Green</span></li>
+</ul></li>
+<li>Expansion
+
+<ul>
+<li><span class="hi-tofe">TOFE</span> - Highlighted in <span class="hi-tofe">Aqua</span></li>
+<li><span class="hi-sdcard">SD Card</span> - Highlighted in <span class="hi-sdcard">Brown</span></li>
+</ul></li>
+</ul>
+
+<p>
+  <img src="/img/highlights/master.jpg" alt="Layout of parts on the Opsis" />
+</p>
+
+<h3 id="fpga-&amp;-memory-layout">FPGA &amp; Memory Layout</h3>
+
+<ul>
+<li><span class="hi-fpga">FPGA &amp; Memory section</span> is highlighted in <span class="hi-fpga">Pink</span></li>
+</ul>
+
+<p>
+  <img src="/img/highlights/FPGA.jpg" alt="FPGA on the Opsis" />
+</p>
+
+<h3 id="video-layout">Video Layout</h3>
 
 <h4 id="displayport-(gtp-transceivers)-layout">DisplayPort (GTP Transceivers) Layout</h4>
 
@@ -140,6 +180,116 @@
 
 <p>
   <img src="/img/highlights/DisplayPort.jpg" alt="DisplayPort on the Opsis" />
+</p>
+
+<h4 id="hdmi-layout">HDMI Layout</h4>
+
+<ul>
+<li>HDMI;
+
+<ul>
+<li><span class="hi-hdmi-in">Receiver (RX)</span> is highlighted in <span class="hi-hdmi-in">Dark Blue</span></li>
+<li><span class="hi-hdmi-out">Transmitter (TX)</span> is highlighted in <span class="hi-hdmi-out">Light Blue</span></li>
+</ul></li>
+</ul>
+
+<p>
+  <img src="/img/highlights/HDMI.jpg" alt="HDMI on the Opsis" />
+</p>
+
+<h3 id="connectivity">Connectivity</h3>
+
+<h4 id="ethernet-layout">Ethernet Layout</h4>
+
+<ul>
+<li><span class="hi-ethernet">Ethernet</span> is highlighted in <span class="hi-ethernet">Purple</span></li>
+<li>Parts shared between Ethernet and USB Peripheral are highlighted in a checkerboard fashion.</li>
+</ul>
+
+<p>
+  <img src="/img/highlights/Ethernet.jpg" alt="Ethernet on the Opsis" />
+</p>
+
+<h4 id="usb-layout">USB Layout</h4>
+
+<ul>
+<li>USB;
+
+<ul>
+<li><span class="hi-usb-otg">USB OTG</span> (Host or Device) is highlighted in <span class="hi-usb-otg">Dark Green</span></li>
+<li><span class="hi-usb-fx2">USB Peripheral</span> (Device Only) is highlighted in <span class="hi-usb-fx2">Light Green</span></li>
+</ul></li>
+<li>Parts shared between Ethernet and USB Peripheral are highlighted in a checkerboard fashion.</li>
+</ul>
+
+<p>
+  <img src="/img/highlights/USB.jpg" alt="USB on the Opsis" />
+</p>
+
+<h3 id="expansion-layout">Expansion Layout</h3>
+
+<h4 id="sd-card-layout">SD Card Layout</h4>
+
+<ul>
+<li><span class="hi-sdcard">SD Card</span> is highlighted in <span class="hi-sdcard">Brown</span></li>
+</ul>
+
+<p>
+  <img src="/img/highlights/SDCard.jpg" alt="SD Card on the Opsis" />
+</p>
+
+<h4 id="tofe-layout">TOFE Layout</h4>
+
+<ul>
+<li><span class="hi-tofe">TOFE</span> is highlighted in <span class="hi-tofe">Aqua</span></li>
+</ul>
+
+<p>
+  <img src="/img/highlights/TOFE.jpg" alt="TOFE on the Opsis" />
+</p>
+
+<h3 id="config-&amp;-status-layout">Config &amp; Status Layout</h3>
+
+<h4 id="jumper-layout">Jumper Layout</h4>
+
+<ul>
+<li><span class="hi-yellow">Jumpers</span> are highlighted in <span class="hi-yellow">Yellow</span></li>
+</ul>
+
+<p>
+  <img src="/img/highlights/Jumpers.jpg" alt="Jumpers on the Opsis" />
+</p>
+
+<h4 id="leds-layout">LEDs Layout</h4>
+
+<ul>
+<li><span class="hi-yellow">LEDs</span> are highlighted in <span class="hi-yellow">Yellow</span></li>
+</ul>
+
+<p>
+  <img src="/img/highlights/LEDs.jpg" alt="LEDs on the Opsis" />
+</p>
+
+<h3 id="supporting-component-layout">Supporting Component Layout</h3>
+
+<h4 id="clock-layout">Clock Layout</h4>
+
+<ul>
+<li><span class="hi-yellow">Clock related sections</span> are highlighted in <span class="hi-yellow">Yellow</span></li>
+</ul>
+
+<p>
+  <img src="/img/highlights/Clocks.jpg" alt="Clocks on the Opsis" />
+</p>
+
+<h4 id="power-layout">Power Layout</h4>
+
+<ul>
+<li><span class="hi-power">Power related sections</span> are highlighted in <span class="hi-power">Red</span></li>
+</ul>
+
+<p>
+  <img src="/img/highlights/Power.jpg" alt="Power on the Opsis" />
 </p>
 
 <!-- References to pages -->

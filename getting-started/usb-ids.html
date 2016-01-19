@@ -11,6 +11,8 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/toc.css">
+
     </head>
     <body>
 
@@ -46,6 +48,8 @@
         
         
             <li><a href="/getting-started/overview.html">Overview</a></li>
+        
+            <li><a href="/getting-started/layout.html">Layout</a></li>
         
             <li><a href="/getting-started/case.html">Case</a></li>
         
@@ -93,9 +97,11 @@
         <li class="nav-header">More Information</li>
         
         
-            <li><a href="/info/contact-us.html">Contact Numato</a></li>
+            <li><a href="/info/contact-numato.html">Contact Numato</a></li>
         
             <li><a href="/info/license.html">License</a></li>
+        
+            <li><a href="/info/video-info-faq.html">Video FAQ</a></li>
         
     
     <li class="nav-header">Repositories</li>
@@ -112,22 +118,30 @@
 
                     <div id="content" class="col-sm-10">
                         <div class="page-header">
-    <h2>USB IDs
+    <h1>USB IDs
         
-    </h2>
+    </h1>
+
+<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li><a href="#summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li><li><a href="#device-id"><span class="tocnumber">2</span> <span class="toctext">Device ID</span></a><ul><li><a href="#serial-number"><span class="tocnumber">2.1</span> <span class="toctext">Serial Number</span></a></li></ul></li><li><a href="#failsafe-mode"><span class="tocnumber">3</span> <span class="toctext">Failsafe Mode</span></a></li><li><a href="#unconfigured-mode"><span class="tocnumber">4</span> <span class="toctext">Unconfigured Mode</span></a></li><li><a href="#usb-jtag-and-usb-uart"><span class="tocnumber">5</span> <span class="toctext">USB-JTAG and USB-UART</span></a></li><li><a href="#hdmi2usb.tv-firmware"><span class="tocnumber">6</span> <span class="toctext">HDMI2USB.tv Firmware</span></a></li><li><a href="#reserved-for-customer-designs-(fx2)"><span class="tocnumber">7</span> <span class="toctext">Reserved for Customer Designs (FX2)</span></a></li><li><a href="#reserved-for-customer-designs-(otg)"><span class="tocnumber">8</span> <span class="toctext">Reserved for Customer Designs (OTG)</span></a></li></ul></td></tr></tbody></table></div>
+
 </div>
+
 
 <p>Due to the configurable nature of the <a href="/features/usb-peripheral.html">Cypress FX2</a> the board can appear under
 a number of different <a href="/getting-started/usb-ids.html">USB IDs</a>. This page tries to collect all the common 
 <a href="/getting-started/usb-ids.html">USB IDs</a> that the Opsis board can enumerate as.</p>
 
-<p>More information about the USB IDs can be found at the following places;
- * <a href="http://FIXME/">FIXME: Put a link to the USB spec here</a>
- * <a href="http://www.beyondlogic.org/usbnutshell/usb5.shtml#DeviceDescriptors">USB in a NutShell: USB Descriptors</a></p>
+<p>More information about the USB IDs can be found at the following places;</p>
 
-<h1 id="summary">Summary</h1>
+<ul>
+<li><a href="http://FIXME/">FIXME: Put a link to the USB spec here</a></li>
+<li><a href="http://www.beyondlogic.org/usbnutshell/usb5.shtml#DeviceDescriptors">USB in a NutShell: USB Descriptors</a></li>
+</ul>
 
-<table><thead>
+<h2 id="summary">Summary</h2>
+
+<table>
+  <thead>
 <tr>
 <th style="text-align: right">Mode</th>
 <th style="text-align: center">Vendor ID</th>
@@ -135,7 +149,8 @@ a number of different <a href="/getting-started/usb-ids.html">USB IDs</a>. This 
 <th style="text-align: center">Device ID</th>
 <th style="text-align: left">Serial No</th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td style="text-align: right">Failsafe</td>
 <td style="text-align: center">0x04b4</td>
@@ -158,7 +173,7 @@ a number of different <a href="/getting-started/usb-ids.html">USB IDs</a>. This 
 <td style="text-align: left">Device MAC</td>
 </tr>
 <tr>
-<td style="text-align: right"><a href="http://hdmi2usb.tv/">HDMI2USB.tv</a></td>
+<td style="text-align: right"><a href="https://hdmi2usb.tv/">HDMI2USB.tv</a></td>
 <td style="text-align: center">0x2A19</td>
 <td style="text-align: center">0x5442</td>
 <td style="text-align: center"><a href="did">See Device ID table</a></td>
@@ -179,14 +194,14 @@ a number of different <a href="/getting-started/usb-ids.html">USB IDs</a>. This 
 <td style="text-align: left"><a href="reserved-otg-sno">User defined</a></td>
 </tr>
 <tr>
-<td style="text-align: right">Older <a href="http://github.com/mithro/ixo-usb-jtag">ixo-usb-jtag</a></td>
+<td style="text-align: right">Older <a href="https://github.com/mithro/ixo-usb-jtag">ixo-usb-jtag</a></td>
 <td style="text-align: center">0x16C0</td>
 <td style="text-align: center">0x06AD</td>
 <td style="text-align: center">0x4</td>
 <td style="text-align: left"><code>hw_opsis</code></td>
 </tr>
 <tr>
-<td style="text-align: right"><a href="http://github.com/mithro/fx2lib">fx2lib</a> CDC-Serial Example</td>
+<td style="text-align: right"><a href="https://github.com/mithro/fx2lib">fx2lib</a> CDC-Serial Example</td>
 <td style="text-align: center">0x04B4</td>
 <td style="text-align: center">0x1004</td>
 <td style="text-align: center">0x0</td>
@@ -199,17 +214,20 @@ a number of different <a href="/getting-started/usb-ids.html">USB IDs</a>. This 
 <td style="text-align: center">0x0</td>
 <td style="text-align: left">Set by FPGA firmware, should be Device MAC</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<hr>
+<hr />
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th>Vendor ID</th>
 <th>Vendor Name</th>
 <th>Description</th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td>0x04b4</td>
 <td>Cypress Semiconductor Corp.</td>
@@ -230,16 +248,19 @@ a number of different <a href="/getting-started/usb-ids.html">USB IDs</a>. This 
 <td>OpenMoko, Inc.</td>
 <td>Originally made phones but now have <a href="http://wiki.openmoko.org/wiki/USB_Product_IDs">donated their ID to open source projects</a>.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <h2 id="device-id">Device ID</h2>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th>Device ID</th>
 <th>Board Type</th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td>0x0</td>
 <td>Unknown / unspecified.</td>
@@ -264,25 +285,28 @@ a number of different <a href="/getting-started/usb-ids.html">USB IDs</a>. This 
 <td>0x5</td>
 <td>Production board.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<h2 id="serial-number">Serial Number</h2>
+<h3 id="serial-number">Serial Number</h3>
 
 <p>No serial number is provided in <em><a href="/features/usb-peripheral.html#failsafe-mode---unable-to-read-eeprom">Failsafe Mode</a></em> or <em><a href="/features/usb-peripheral.html#unconfigured-mode---real-eeprom-booting">Unconfigured Mode</a></em>.</p>
 
 <p>In other modes, the serial number should be the MAC Address embedded in the EEPROM.</p>
 
-<h1 id="failsafe-mode">Failsafe Mode</h1>
+<h2 id="failsafe-mode">Failsafe Mode</h2>
 
 <p>If the <a href="/features/usb-peripheral.html">Cypress FX2</a> is unable to read from any EEPROM on boot it will boot
 into [Failsafe Booting].</p>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th style="text-align: right"></th>
 <th></th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td style="text-align: right">Vendor ID</td>
 <td>0x04b4</td>
@@ -303,19 +327,22 @@ into [Failsafe Booting].</p>
 <td style="text-align: right">Chip &amp; Port</td>
 <td><a href="/features/usb-peripheral.html">USB Peripheral</a>, USB-B port on front.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<h1 id="unconfigured-mode">Unconfigured Mode</h1>
+<h2 id="unconfigured-mode">Unconfigured Mode</h2>
 
 <p>If the FPGA is unable to provide the <a href="/features/usb-peripheral.html">Cypress FX2</a> with firmware, the FX2 will
 boot in <a href="/features/usb-peripheral.html#unconfigured-mode---real-eeprom-booting">unconfigured mode</a>.</p>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th style="text-align: right"></th>
 <th></th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td style="text-align: right">Vendor ID</td>
 <td>0x2A19</td>
@@ -336,21 +363,24 @@ boot in <a href="/features/usb-peripheral.html#unconfigured-mode---real-eeprom-b
 <td style="text-align: right">Chip &amp; Port</td>
 <td><a href="/features/usb-peripheral.html">USB Peripheral</a>, USB-B port on front.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<h1 id="usb-jtag-and-usb-uart">USB-JTAG and USB-UART</h1>
+<h2 id="usb-jtag-and-usb-uart">USB-JTAG and USB-UART</h2>
 
 <p>In this mode you can program the FPGA using the 
 <a href="/getting-started/jtag.html">USB-JTAG</a>
 and talk to it using a 
 <a href="/getting-started/uarts.html">USB-UART</a>.</p>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th style="text-align: right"></th>
 <th></th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td style="text-align: right">Vendor ID</td>
 <td>0x2A19</td>
@@ -371,16 +401,19 @@ and talk to it using a
 <td style="text-align: right">Chip &amp; Port</td>
 <td><a href="/features/usb-peripheral.html">USB Peripheral</a>, USB-B port on front.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <p>The Device ID number is used to determine the mode the board is operating in.</p>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th>Device ID</th>
 <th>Board Type</th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td>0x0</td>
 <td>Unknown mode</td>
@@ -397,18 +430,21 @@ and talk to it using a
 <td>0x3</td>
 <td>CDC Serial UART mode</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<h3 id="hdmi2usb.tv-firmware">HDMI2USB.tv Firmware</h3>
+<h2 id="hdmi2usb.tv-firmware">HDMI2USB.tv Firmware</h2>
 
 <p>In this mode the device appears as a USB webcam and USB serial port.</p>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th style="text-align: right"></th>
 <th></th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td style="text-align: right">Vendor ID</td>
 <td>0x2A19</td>
@@ -421,20 +457,23 @@ and talk to it using a
 <td style="text-align: right">Chip &amp; Port</td>
 <td><a href="/features/usb-peripheral.html">USB Peripheral</a>, USB-B port on front.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<h3 id="reserved-for-customer-designs-(fx2)">Reserved for Customer Designs (FX2)</h3>
+<h2 id="reserved-for-customer-designs-(fx2)">Reserved for Customer Designs (FX2)</h2>
 
 <p>This USB ID is reserved for customer designs running on the 
 <a href="/features/usb-peripheral.html">USB Peripheral</a> (Cypress FX2) connected to the
 USB-B on the front of the board.</p>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th style="text-align: right"></th>
 <th></th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td style="text-align: right">Vendor ID</td>
 <td>0x2A19</td>
@@ -447,20 +486,23 @@ USB-B on the front of the board.</p>
 <td style="text-align: right">Chip &amp; Port</td>
 <td><a href="/features/usb-peripheral.html">USB Peripheral</a>, USB-B port on front.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
-<h3 id="reserved-for-customer-designs-(otg)">Reserved for Customer Designs (OTG)</h3>
+<h2 id="reserved-for-customer-designs-(otg)">Reserved for Customer Designs (OTG)</h2>
 
 <p>This USB ID is reserved for customer designs running on the 
 <a href="/features/usb-otg.html">USB OTG</a> which is connected to the Micro-USB on back
 of board.</p>
 
-<table><thead>
+<table>
+  <thead>
 <tr>
 <th style="text-align: right"></th>
 <th></th>
 </tr>
-</thead><tbody>
+</thead>
+  <tbody>
 <tr>
 <td style="text-align: right">Vendor ID</td>
 <td>0x2A19</td>
@@ -473,7 +515,8 @@ of board.</p>
 <td style="text-align: right">Chip &amp; Port</td>
 <td><a href="/features/usb-otg.html">USB OTG</a>, Micro-USB on back of board.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
 <!-- References to pages -->
 

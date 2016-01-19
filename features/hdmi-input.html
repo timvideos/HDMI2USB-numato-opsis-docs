@@ -11,6 +11,8 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/toc.css">
+
     </head>
     <body>
 
@@ -46,6 +48,8 @@
         
         
             <li><a href="/getting-started/overview.html">Overview</a></li>
+        
+            <li><a href="/getting-started/layout.html">Layout</a></li>
         
             <li><a href="/getting-started/case.html">Case</a></li>
         
@@ -93,9 +97,11 @@
         <li class="nav-header">More Information</li>
         
         
-            <li><a href="/info/contact-us.html">Contact Numato</a></li>
+            <li><a href="/info/contact-numato.html">Contact Numato</a></li>
         
             <li><a href="/info/license.html">License</a></li>
+        
+            <li><a href="/info/video-info-faq.html">Video FAQ</a></li>
         
     
     <li class="nav-header">Repositories</li>
@@ -112,62 +118,93 @@
 
                     <div id="content" class="col-sm-10">
                         <div class="page-header">
-    <h2>HDMI Input
+    <h1>HDMI Input
         
-    </h2>
+    </h1>
+
+<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li><a href="#edid"><span class="tocnumber">1</span> <span class="toctext">EDID</span></a></li><li><a href="#hpd"><span class="tocnumber">2</span> <span class="toctext">HPD</span></a></li></ul></td></tr></tbody></table></div>
+
 </div>
 
+
+<h4 id="hdmi-layout">HDMI Layout</h4>
+
+<ul>
+<li>HDMI;
+
+<ul>
+<li><span class="hi-hdmi-in">Receiver (RX)</span> is highlighted in <span class="hi-hdmi-in">Dark Blue</span></li>
+<li><span class="hi-hdmi-out">Transmitter (TX)</span> is highlighted in <span class="hi-hdmi-out">Light Blue</span></li>
+</ul></li>
+</ul>
+
+<p>
+  <img src="/img/highlights/HDMI.jpg" alt="HDMI on the Opsis" />
+</p>
+
 <p>The board includes two HDMI inputs.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">+--------------------+        +----------------+
+<div class="highlight">
+  <pre>
+    <code class="language-text" data-lang="text">+--------------------+        +----------------+
 |                    |        |                |
 |    Computer        |&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;|  Opsis Board   |
 |                    |        |                |
 +--------------------+        +----------------+
-</code></pre></div>
+</code>
+  </pre>
+</div>
 <h1 id="hdmi---connector-j4---direction-rx">HDMI - connector J4 - Direction RX</h1>
-<div class="highlight"><pre><code class="language-text" data-lang="text">NET &quot;j4_TMDS(2)&quot;           LOC =    &quot;K20&quot;       |IOSTANDARD =         TMDS_33;     #                  Red (/HDMI/TMDS-RX1-2_P)
-NET &quot;j4_TMDSB(2)&quot;          LOC =    &quot;L19&quot;       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX1-2_N)
-NET &quot;j4_TMDS(1)&quot;           LOC =    &quot;H21&quot;       |IOSTANDARD =         TMDS_33;     #                Green (/HDMI/TMDS-RX1-1_P)
-NET &quot;j4_TMDSB(1)&quot;          LOC =    &quot;H22&quot;       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX1-1_N)
-NET &quot;j4_TMDS(0)&quot;           LOC =    &quot;J20&quot;       |IOSTANDARD =         TMDS_33;     #                 Blue (/HDMI/TMDS-RX1-0_P)
-NET &quot;j4_TMDSB(0)&quot;          LOC =    &quot;J22&quot;       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX1-0_N)
-NET &quot;j4_TMDS(3)&quot;           LOC =    &quot;M20&quot;       |IOSTANDARD =         TMDS_33;     #                  CLK (/HDMI/TMDS-RX1-CLK_P)
-NET &quot;j4_TMDSB(3)&quot;          LOC =    &quot;M19&quot;       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX1-CLK_N)
+<div class="highlight">
+  <pre>
+    <code class="language-text" data-lang="text">NET "j4_TMDS(2)"           LOC =    "K20"       |IOSTANDARD =         TMDS_33;     #                  Red (/HDMI/TMDS-RX1-2_P)
+NET "j4_TMDSB(2)"          LOC =    "L19"       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX1-2_N)
+NET "j4_TMDS(1)"           LOC =    "H21"       |IOSTANDARD =         TMDS_33;     #                Green (/HDMI/TMDS-RX1-1_P)
+NET "j4_TMDSB(1)"          LOC =    "H22"       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX1-1_N)
+NET "j4_TMDS(0)"           LOC =    "J20"       |IOSTANDARD =         TMDS_33;     #                 Blue (/HDMI/TMDS-RX1-0_P)
+NET "j4_TMDSB(0)"          LOC =    "J22"       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX1-0_N)
+NET "j4_TMDS(3)"           LOC =    "M20"       |IOSTANDARD =         TMDS_33;     #                  CLK (/HDMI/TMDS-RX1-CLK_P)
+NET "j4_TMDSB(3)"          LOC =    "M19"       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX1-CLK_N)
 # \/ Weakly pulled (100k) to VCC3V3 via R132
 # \/ Weakly pulled (27k) to VCC3V3 via R146
-NET &quot;hdmi_j4_cec&quot;          LOC =    &quot;K17&quot;       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P1-CEC | /HDMI/TMDS-RX1-CEC)
+NET "hdmi_j4_cec"          LOC =    "K17"       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P1-CEC | /HDMI/TMDS-RX1-CEC)
 # \/ Weakly pulled (47k) to VCC3V3 via R135
 # \/ Strongly pulled (1k) to /HDMI/HDMI_VCC5V0 via R142
-NET &quot;hdmi_j4_scl&quot;          LOC =    &quot;L17&quot;       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P1-SCL | /HDMI/TMDS-RX1-SCL)
+NET "hdmi_j4_scl"          LOC =    "L17"       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P1-SCL | /HDMI/TMDS-RX1-SCL)
 # \/ Weakly pulled (47k) to VCC3V3 via R136
 # \/ Strongly pulled (1k) to /HDMI/HDMI_VCC5V0 via R141
-NET &quot;hdmi_j4_sda&quot;          LOC =    &quot;T18&quot;       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P1-SDA | /HDMI/TMDS-RX1-SDA)
+NET "hdmi_j4_sda"          LOC =    "T18"       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P1-SDA | /HDMI/TMDS-RX1-SDA)
 # \/ Strongly pulled (1k) to /HDMI/HDMI_VCC5V0 via R153
 # \/ Weakly pulled (15k) to GND via R151
-NET &quot;hdmi_j4_hpd&quot;          LOC =    &quot;V19&quot;       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P1-HOT | /HDMI/TMDS-RX1-HOT)
-</code></pre></div>
+NET "hdmi_j4_hpd"          LOC =    "V19"       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P1-HOT | /HDMI/TMDS-RX1-HOT)
+</code>
+  </pre>
+</div>
 <h1 id="hdmi---connector-j5---direction-rx">HDMI - connector J5 - Direction RX</h1>
-<div class="highlight"><pre><code class="language-text" data-lang="text">NET &quot;j5_TMDS(2)&quot;           LOC =    &quot;P21&quot;       |IOSTANDARD =         TMDS_33;     #                  Red (/HDMI/TMDS-RX2-2_P)
-NET &quot;j5_TMDSB(2)&quot;          LOC =    &quot;P22&quot;       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX2-2_N)
-NET &quot;j5_TMDS(1)&quot;           LOC =    &quot;N20&quot;       |IOSTANDARD =         TMDS_33;     #                Green (/HDMI/TMDS-RX2-1_P)
-NET &quot;j5_TMDSB(1)&quot;          LOC =    &quot;N22&quot;       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX2-1_N)
-NET &quot;j5_TMDS(0)&quot;           LOC =    &quot;M21&quot;       |IOSTANDARD =         TMDS_33;     #                 Blue (/HDMI/TMDS-RX2-0_P)
-NET &quot;j5_TMDSB(0)&quot;          LOC =    &quot;M22&quot;       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX2-0_N)
-NET &quot;j5_TMDS(3)&quot;           LOC =    &quot;L20&quot;       |IOSTANDARD =         TMDS_33;     #                  CLK (/HDMI/TMDS-RX2-CLK_P)
-NET &quot;j5_TMDSB(3)&quot;          LOC =    &quot;L22&quot;       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX2-CLK_N)
+<div class="highlight">
+  <pre>
+    <code class="language-text" data-lang="text">NET "j5_TMDS(2)"           LOC =    "P21"       |IOSTANDARD =         TMDS_33;     #                  Red (/HDMI/TMDS-RX2-2_P)
+NET "j5_TMDSB(2)"          LOC =    "P22"       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX2-2_N)
+NET "j5_TMDS(1)"           LOC =    "N20"       |IOSTANDARD =         TMDS_33;     #                Green (/HDMI/TMDS-RX2-1_P)
+NET "j5_TMDSB(1)"          LOC =    "N22"       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX2-1_N)
+NET "j5_TMDS(0)"           LOC =    "M21"       |IOSTANDARD =         TMDS_33;     #                 Blue (/HDMI/TMDS-RX2-0_P)
+NET "j5_TMDSB(0)"          LOC =    "M22"       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX2-0_N)
+NET "j5_TMDS(3)"           LOC =    "L20"       |IOSTANDARD =         TMDS_33;     #                  CLK (/HDMI/TMDS-RX2-CLK_P)
+NET "j5_TMDSB(3)"          LOC =    "L22"       |IOSTANDARD =         TMDS_33;     #                      (/HDMI/TMDS-RX2-CLK_N)
 # \/ Weakly pulled (100k) to VCC3V3 via R192
 # \/ Weakly pulled (27k) to VCC3V3 via R199
-NET &quot;hdmi_j5_cec&quot;          LOC =    &quot;T22&quot;       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P3-CEC | /HDMI/TMDS-RX2-CEC)
+NET "hdmi_j5_cec"          LOC =    "T22"       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P3-CEC | /HDMI/TMDS-RX2-CEC)
 # \/ Weakly pulled (47k) to VCC3V3 via R193
 # \/ Strongly pulled (1k) to /HDMI/HDMI_VCC5V0 via R197
-NET &quot;hdmi_j5_scl&quot;          LOC =    &quot;T21&quot;       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P3-SCL | /HDMI/TMDS-RX2-SCL)
+NET "hdmi_j5_scl"          LOC =    "T21"       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P3-SCL | /HDMI/TMDS-RX2-SCL)
 # \/ Strongly pulled (1k) to /HDMI/HDMI_VCC5V0 via R196
 # \/ Weakly pulled (47k) to VCC3V3 via R194
-NET &quot;hdmi_j5_sda&quot;          LOC =    &quot;R22&quot;       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P3-SDA | /HDMI/TMDS-RX2-SDA)
+NET "hdmi_j5_sda"          LOC =    "R22"       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P3-SDA | /HDMI/TMDS-RX2-SDA)
 # \/ Weakly pulled (15k) to GND via R204
 # \/ Strongly pulled (1k) to /HDMI/HDMI_VCC5V0 via R205
-NET &quot;hdmi_j5_hpd&quot;          LOC =    &quot;R20&quot;       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P3-HOT | /HDMI/TMDS-RX2-HOT)
-</code></pre></div>
+NET "hdmi_j5_hpd"          LOC =    "R20"       |IOSTANDARD =        LVCMOS33;     #                      (/HDMI/P3-HOT | /HDMI/TMDS-RX2-HOT)
+</code>
+  </pre>
+</div>
 <h2 id="edid">EDID</h2>
 
 <p>For a computer to detect the board an EDID ROM needs to be emulated on the I2C channel.</p>
