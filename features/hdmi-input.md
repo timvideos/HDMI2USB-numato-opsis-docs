@@ -4,6 +4,8 @@ title: "HDMI Input"
 category: features
 ---
 
+%[include board/hdmi]
+
 The board includes two HDMI inputs.
 
 ```

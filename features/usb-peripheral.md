@@ -23,6 +23,7 @@ The FX2 can be used in the following ways;
 
  * Emulation support for wide range of USB devices.
 
+%[include board/usb]
 
 ## Booting
 

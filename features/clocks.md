@@ -10,6 +10,10 @@ FPGA and one crystal connected to the Ethernet interface.
 For details about the crystal connected to the Ethernet interface, please see
 the [Ethernet](ethernet.html) page.
 
+%[include board/clocks]
+
+## FPGA Clocks
+
 ### 100MHz Clock
 
  * [Datasheet](http://www.foxonline.com/pdfs/FXO_HC53.pdf)
@@ -49,7 +53,7 @@ See the [GTP transceiver page](gtp-transceivers.html) for details about how to u
 
 ![27MHz Clock Picture](img/clock-27mhz.jpg)
 
-## Spartan 6 Clocking Resources
+### Spartan 6 Clocking Resources
 
 The Spartan 6 on the Numato Opsis contains 4 clock management titles (CMT).
 Each CMT contains a single Phase Lock Loop (PLL) and a two Digital Clock
