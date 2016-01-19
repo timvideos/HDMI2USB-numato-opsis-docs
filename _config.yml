@@ -43,11 +43,12 @@ highlighter: pygments
 future: true
 
 # Exclude non-site files
-exclude: ['bin', 'README.md', 'old']
+exclude: ['bin', 'README.md', 'old', 'DEPLOY.md']
 
 include:
   - getting-started
   - features
+  - info
 
 # Use the redcarpet Markdown renderer
 markdown: redcarpet
@@ -75,6 +76,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       disqus: 1
+      order: 99
 
 gems:
   - jekyll-redirect-from

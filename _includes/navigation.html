@@ -5,9 +5,10 @@
         {% assign label = section[1] %}
 
         <li class="nav-header">{{ label }}</li>
-        {% for page in site.categories[attr] reversed %}
-            <li data-order="{{ page.order }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-        {% endfor %}
+        {% assign sorted_pages = site.pages | moresort: 'order', 'title' %}
+        {% for page in sorted_pages %}{% if page.path contains attr  %}
+            <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}{% endfor %}
     {% endfor %}
     <li class="nav-header">Repositories</li>
     <li><a href="https://github.com/timvideos/HDMI2USB-numato-opsis-sample-code">Sample Code</a></li>
