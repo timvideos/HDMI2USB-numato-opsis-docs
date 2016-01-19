@@ -25,10 +25,16 @@ module Jekyll
 
       htag = 'h' + level.to_s
       if tags.css(htag).length == 0 then
-        return next_level(doc, doc, level+1, prefix)
+        return next_level(doc, tags, level+1, prefix)
       end
 
-      level_html = '<ul>'
+      level_html = ''
+
+      level_html += '<ul>'
+      # Before first tag
+      #beforefirsttag = tags.css(htag).first.xpath("preceding::*")
+      #level_html += next_level(doc, beforefirsttag, level+1, "#{prefix}#{0}.")
+
       i = 0
       tags.css(htag).each do |tag|
         afterthistag = tag.xpath("following::*")
@@ -44,6 +50,11 @@ module Jekyll
         level_html += next_level(doc, inbetween, level+1, "#{prefix}#{i}.")
         level_html += '</li>'
       end
+
+      # After last tag
+      #afterlasttag = tags.css(htag).last.xpath("following::*")
+      #level_html += next_level(doc, afterlasttag, level+1, "#{prefix}#{i+1}.")
+
       level_html += '</ul>'
     end
   end
