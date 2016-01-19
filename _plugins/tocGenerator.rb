@@ -61,9 +61,9 @@ module Jekyll
                         inner_section
                       ].map(&:to_s).join ''
 
-          sect['id'] = "#{anchor_id}"
+          #sect['id'] = "#{anchor_id}"
 
-          level_html += create_level_html(anchor_id,
+          level_html += create_level_html(sect['id'],
                                           toc_level + 1,
                                           toc_section + inner_section,
                                           item_number.to_s + '.' + inner_section.to_s,
@@ -74,9 +74,9 @@ module Jekyll
         level_html = '<ul>' + level_html + '</ul>' if level_html.length > 0
 
         anchor_id = anchor_prefix + toc_level.to_s + '-' + toc_section.to_s
-        tag['id'] = "#{anchor_id}"
+        #tag['id'] = "#{anchor_id}"
 
-        toc_html += create_level_html(anchor_id,
+        toc_html += create_level_html(tag['id'],
                                       toc_level,
                                       toc_section,
                                       item_number,
@@ -92,6 +92,7 @@ module Jekyll
       toc_index_count = item_number - 1
 
       return html unless toc_html.length > 0
+      return html unless doc.css('div#toc').length > 0
 
       hide_html = ''
       hide_html = HIDE_HTML.gsub('%1', hide_label) if (show_toggle_button)
@@ -105,7 +106,7 @@ module Jekyll
         .gsub('%1', replaced_toggle_html)
         .gsub('%2', toc_html)
 
-        doc.css('body').children.before(toc_table)
+        doc.css('div#toc').first.replace(toc_table)
       end
 
       doc.css('body').children.to_xhtml

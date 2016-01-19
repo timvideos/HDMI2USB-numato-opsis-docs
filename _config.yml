@@ -70,6 +70,8 @@ redcarpet:
         'with_toc_data',
     ]
 
+tocTopTag: h2
+
 defaults:
   -
     scope:
@@ -77,6 +79,7 @@ defaults:
     values:
       disqus: 1
       order: 99
+      customToc: false
 
 gems:
   - jekyll-redirect-from

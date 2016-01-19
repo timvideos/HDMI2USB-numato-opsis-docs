@@ -11,6 +11,8 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/toc.css">
+
     </head>
     <body>
 
@@ -29,11 +31,11 @@
                     </div>
 
                     <div id="content" class="col-sm-10">
-                        {{ content }}
+                        {{ content | toc_generate }}
                     </div>
                 {% else %}
                     <div id="content" class="col-sm-12">
-                        {{ content }}
+                        {{ content | toc_generate }}
                     </div>
                 {% endif %}
             </div>
