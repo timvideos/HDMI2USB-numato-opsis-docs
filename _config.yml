@@ -70,8 +70,6 @@ redcarpet:
         'with_toc_data',
     ]
 
-tocTopTag: h2
-
 defaults:
   -
     scope:
