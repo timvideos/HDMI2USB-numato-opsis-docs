@@ -45,6 +45,10 @@ future: true
 # Exclude non-site files
 exclude: ['bin', 'README.md']
 
+include:
+  - getting-started
+  - features
+
 # Use the redcarpet Markdown renderer
 markdown: redcarpet
 kramdown: 
