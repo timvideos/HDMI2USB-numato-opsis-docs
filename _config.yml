@@ -1,3 +1,8 @@
+username: timvideos
+repo: HDMI2USB-numato-opsis-docs
+branch: master
+destination: ../opsis.hdmi2usb.tv
+
 # Site title and subtitle. This is used in _includes/header.html
 title: 'Numato Opsis'
 subtitle: 'Developer Documentation'
