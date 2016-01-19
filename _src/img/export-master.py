@@ -23,7 +23,7 @@ def export_master():
 
 			args = layer.name.split(", ")
 			print(args)
-			if len(args) > 1:
+			if len(args) > 1 and args[1].strip() == "Skip":
 				continue
 
 			layer.visible = True
@@ -36,9 +36,16 @@ def export_master():
 		for layer in tmp.layers[:-1]:
 			args = layer.name.split(", ")
 			filename = "%s.jpg" % args[0]
+			if len(args) > 1 and args[1].strip() == "Master":
+				continue
+
 			layer.visible = True
+			for olayer in tmp.layers[:-1]:
+				if layer.name in olayer.name:
+					olayer.visible = True
 			save(tmp, filename)
-			layer.visible = False
+			for layer in tmp.layers[:-1]:
+				layer.visible = False
 	finally:
 		pdb.gimp_quit(0)
 
