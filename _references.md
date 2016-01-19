@@ -32,20 +32,34 @@
 
 <!-- Wikipedia Links -->
 
- [SDI]: http://en.wikipedia.org/wiki/Serial_digital_interface
- [MJPEG]: http://en.wikipedia.org/wiki/MJPEG
- [YUV]: http://en.wikipedia.org/wiki/YUV
- [HDMI]: http://en.wikipedia.org/wiki/HDMI
- [DVI]: http://en.wikipedia.org/wiki/Digital_visual_interface
- [DisplayPort]: http://en.wikipedia.org/wiki/DisplayPort
- [EDID]: http://en.wikipedia.org/wiki/Extended_display_identification_data
+ [SDI]: https://en.wikipedia.org/wiki/Serial_digital_interface
+ [MJPEG]: https://en.wikipedia.org/wiki/MJPEG
+ [YUV]: https://en.wikipedia.org/wiki/YUV
+ [HDMI]: https://en.wikipedia.org/wiki/HDMI
+ [DVI]: https://en.wikipedia.org/wiki/Digital_visual_interface
+ [DisplayPort]: https://en.wikipedia.org/wiki/DisplayPort
+ [EDID]: https://en.wikipedia.org/wiki/Extended_display_identification_data
  [JTAG]: https://en.wikipedia.org/wiki/Joint_Test_Action_Group
+ [PCI Express]: https://en.wikipedia.org/wiki/PCI_Express
+
+ [frame rate]: https://en.wikipedia.org/wiki/Frame_rate
+ [bits per pixel]: https://en.wikipedia.org/wiki/Color_depth
+ [resolution]: https://en.wikipedia.org/wiki/Resolution
+ [high definition]: https://en.wikipedia.org/wiki/High-definition_television
+ [jitter]: https://en.wikipedia.org/wiki/Jitter 
+
+ [HDMI1.1]: 
+ [HDMI1.2]:
+ [HDMI1.3]:
 
 <!-- Project links -->
 
- [fx2lib]: http://github.com/mithro/fx2lib
- [ixo-usb-jtag]: http://github.com/mithro/ixo-usb-jtag
- [TimVideos]: http://code.timvideos.us/
- [HDMI2USB]: http://hdmi2usb.tv/
- [HDMI2USB.tv]: http://hdmi2usb.tv/
+ [fx2lib]: https://github.com/mithro/fx2lib
+ [ixo-usb-jtag]: https://github.com/mithro/ixo-usb-jtag
+ [TimVideos]: https://code.timvideos.us/
+ [HDMI2USB]: https://hdmi2usb.tv/
+ [HDMI2USB.tv]: https://hdmi2usb.tv/
 
+ [Mike Field]: http://hamsterworks.co.nz/mediawiki/index.php/FPGA_Projects
+ [HamsterWorks]: http://hamsterworks.co.nz/mediawiki/index.php/FPGA_Projects
+ [Enjoy Digital]: http://www.enjoy-digital.fr/

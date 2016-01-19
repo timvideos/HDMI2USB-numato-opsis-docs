@@ -30,7 +30,7 @@
 module Jekyll
   module Converters
     class Markdown < Converter
-      alias old_convert convert
+      alias old_convert_refs convert
       @@refs_content = nil
 
       def convert(content)
@@ -48,7 +48,7 @@ module Jekyll
         # append content of _references.md, whatever it is
         content += "\n" + @@refs_content
 
-        old_convert(content)
+        old_convert_refs(content)
       end
     end
   end
