@@ -46,7 +46,7 @@ The important summary of the information is that on the Opsis;
     * but **not** `1080p60` (1920×1080 @ 60Hz progressive).
 
  * The [DisplayPort] connector supports resolutions up to a bandwidth of
-   ~12Gbit/s which include extremely high resolutions around 4096 × 2160 @
+   ~12[Gbit/s] which include extremely high resolutions around 4096 × 2160 @
    24Hz.
 
  * The [DisplayPort] connector is dual-mode enabled and thus can operate as high
@@ -63,12 +63,13 @@ In programmable system like an FPGA-based board, the I/O bandwidth supported by
 the pins on the device is the major factor that affects the maximum resolution
 supported on that connector.
 
-To increase the available bandwidth both HDMI (always 3) and [DisplayPort]
-(between 1 and 4) use multiple sets of pins. Due to the high bit rates there is
-also roughly 20% overhead in the wire encoding protocol meaning that only 80%
-of the bandwidth is available to transmit video data. There is also some other
-overheads as there are a number of extra pixels transmitted which don't end up
-actually displayed on the screen.
+To increase the available bandwidth both protocols use multiple sets of pins,
+with [HDMI] always using 3 pairs and [DisplayPort] using between 1 and 4 pairs.
+Due to the high bit rates there is also roughly 20% overhead in the wire
+encoding protocol meaning that only 80% of the bandwidth is available to
+transmit video data.  There is also some other overheads as there are a number
+of extra pixels transmitted which don't end up actually displayed on the
+screen.
 
 This can make things quite confusing because bandwidth numbers can be quoted as
 individual pin or total bandwidth in either raw bandwidth (bit rate) or the
@@ -80,21 +81,21 @@ instead.
 The amount of bandwidth a resolution uses is also dependent on the bits per
 pixel and frame rate used with it. You can make a trade off between the bits
 per pixel, resolution and frame rate. For example, you can fit 4096×2160 at 24
-bits per pixel into ~5Gbit/s of bandwidth it you only use 24 frames per second
+bits per pixel into ~5[Gbit/s] of bandwidth it you only use 24 frames per second
 but need ~12Gbit for 60 frames per second.
 
 It is most common to use 24 bits per pixel (8 bits per RGB channel) and a frame
 rate of 50 or 60 frames. When using these combination the following effective
 bandwidths give roughly these results;
 
- * 4Gbit/s gives roughly max resolution of 1920×1200.
- * 8Gbit/s gives roughly max resolution of 2560×1600. 
- * 12Gbit/s gives roughly max resolution of 3840×2160.
- * 14Gbit/s gives roughly max resolution of 4096×2160.
+ * 4[Gbit/s] gives roughly max resolution of 1920×1200.
+ * 8[Gbit/s] gives roughly max resolution of 2560×1600. 
+ * 12[Gbit/s] gives roughly max resolution of 3840×2160.
+ * 14[Gbit/s] gives roughly max resolution of 4096×2160.
 
 There is also a big difference between the maximum bandwidth a standard
 supports and the actual bandwidth that a connector supports. For example, a
-HDMI2.0 has a maximum bandwidth of ~14Gbit/s but very few devices produce
+HDMI2.0 has a maximum bandwidth of ~14[Gbit/s] but very few devices produce
 anything close to that.
 
 <h3 id="interlace-vs-progressive">What is interlaced versus progressive?</h3>
@@ -153,7 +154,7 @@ optimised to make it work!
 [DisplayPort] is the current standard for video connectivity for the computer
 industry. [DisplayPort] is very different from previous video standards and
 shares more in common with something like [PCI Express] than other video
-standards like [HDMI], DVI and VGA.
+standards like [HDMI], [DVI] and VGA.
 
 The [DisplayPort] standard was originally freely available and accessible by
 anyone, but that is no longer the case for later versions.
@@ -181,30 +182,30 @@ Each new [DisplayPort] revision has done two things;
    supported resolution - see the 
    "[video-info-faq:bandwidth-to-resolution]" section.
 
-   * DisplayPort 1.0 has two modes;
-     - ~1.3Gbit/s (RBR) per lane - giving max usable bandwidth of ~4Gbit/s with 4 lanes.
-     - ~2.2Gbit/s (HBR) per lane - giving max usable bandwidth of ~8Gbit/s with 4 lanes.
+   * [DisplayPort 1.0] has two modes;
+     - ~1.3[Gbit/s] (RBR) per lane - giving max usable bandwidth of ~4[Gbit/s] with 4 lanes.
+     - ~2.2[Gbit/s] (HBR) per lane - giving max usable bandwidth of ~8[Gbit/s] with 4 lanes.
 
-   * DisplayPort 1.2 has 5.4Gbit/s (HBR2) per lane - giving max usable
-     bandwidth of ~16Gbit/s with 4 lanes.
+   * [DisplayPort 1.2] has 5.4[Gbit/s] (HBR2) per lane - giving max usable
+     bandwidth of ~16[Gbit/s] with 4 lanes.
 
-   * DisplayPort 1.3 has 8.1Gbit/s (HBR3) per lane - giving max usable
-     bandwidth of ~25Gbit/s with 4 lanes.
+   * [DisplayPort 1.3] has 8.1[Gbit/s] (HBR3) per lane - giving max usable
+     bandwidth of ~25[Gbit/s] with 4 lanes.
 
  * Added new "protocol features";
 
-   * DisplayPort 1.2 added multi-monitor support, increased AUX channel
+   * [DisplayPort 1.2] added multi-monitor support, increased AUX channel
      bandwidth, more color spaces, 3d and the "mini displayport" connector.
 
-   * DisplayPort 1.3 added mandatory support for Dual-Mode operation compatible
+   * [DisplayPort 1.3] added mandatory support for Dual-Mode operation compatible
      with HDMI2.0
 
 <h3 id="dp-on-opsis-resolutions">What resolutions are supported by DisplayPort connectors on the Opsis board?</h3>
 
 The high speed transceivers on the Spartan 6, which on the Opsis are connected
-to the [DisplayPort] connectors, support both ~1.3Gbit/s (RBR) per lane and
-~2.2Gbit/s (HBR) per lane. The Opsis has all 4 lanes enabled giving an
-effective bandwidth of roughly ~8Gbit/s with 4 lanes.
+to the [DisplayPort] connectors, support both ~1.3[Gbit/s] (RBR) per lane and
+~2.2[Gbit/s] (HBR) per lane. The Opsis has all 4 lanes enabled giving an
+effective bandwidth of roughly ~8[Gbit/s] with 4 lanes.
 
 This means the board supports "4k" video on these connectors with a number of
 caveats. See the [video-info-faq:what-is-4k] section for more information.
@@ -257,10 +258,10 @@ With cheap adapters, yes you can! This is supported.
 <h3 id="dp-on-opsis-with-dual-mode">What resolutions are supported by DisplayPort connectors on the Opsis board when used as HDMI ports (via Dual Mode)?</h3>
 
 [HDMI] only has three lanes compared to [DisplayPort]'s four available, however
-[HDMI] can operate closer to the full 3Gbit/s speed of the transceivers while
-[DisplayPort]. This means the raw bit rate when operating in [HDMI] mode is
-9Gbit/s which gives the same effective bandwidth as [HDMI]1.3 making
-resolutions like; 2560×1600p @ 60 Hz or 3840 × 2160 @ 30 Hz possible.
+[HDMI] can operate closer to the full 3[Gbit/s] speed of the transceivers.
+This means the raw bit rate when operating in [HDMI] mode is 9[Gbit/s] which
+gives the same effective bandwidth as [HDMI 1.3] making resolutions like;
+2560×1600p @ 60 Hz or 3840 × 2160 @ 30 Hz possible.
 
 There is a more information about [HDMI] in the following section.
 
@@ -293,9 +294,9 @@ Each new [HDMI] version has done two things;
  * Increase the maximum supported bandwidth. Increasing the bandwidth increases
    the maximum supported resolution.
 
-   * HDMI 1.0 has max bandwidth of ~4Gbit/s.
-   * HDMI 1.3 has max bandwidth of ~8Gbit/s.
-   * HDMI 2.0 has max bandwidth of ~14Gbit/s.
+   * HDMI 1.0 has max bandwidth of ~4[Gbit/s].
+   * HDMI 1.3 has max bandwidth of ~8[Gbit/s].
+   * HDMI 2.0 has max bandwidth of ~14[Gbit/s].
  
  * Added new "protocol features".
 
@@ -314,7 +315,7 @@ the Opsis board (you could even make up your own). See the
 "[video-info-faq:bandwidth-to-resolution]" and "[video-info-faq:hdmi-versions]"
 questions for more.
 
-The IO pins roughly effective bandwidth of ~2.0 Gbit/s which means the
+The IO pins roughly effective bandwidth of ~2.0 [Gbit/s] which means the
 following standard resolutions when using 24 bits per pixel work reliably in
 decreasing bandwidth required order;
 
@@ -329,7 +330,7 @@ decreasing bandwidth required order;
 With 
 [various techniques](http://hamsterworks.co.nz/mediawiki/index.php/Spartan_6_1080p)
 it is possible to get the IO pins to operate fast enough to provide the ~3
-Gbit/s needed by 1920×1080 @ 60Hz which works with many displays. However the
+[Gbit/s] needed by 1920×1080 @ 60Hz which works with many displays. However the
 output has too much jitter and is not compliant with the [HDMI] standard.
 
 <h3 id="hdmi-on-opsis-versions">What versions of HDMI is compatible with Opsis board?</h3>
