@@ -9,10 +9,11 @@ a number of different [USB IDs]. This page tries to collect all the common
 [USB IDs] that the Opsis board can enumerate as.
 
 More information about the USB IDs can be found at the following places;
+
  * [FIXME: Put a link to the USB spec here](http://FIXME/)
  * [USB in a NutShell: USB Descriptors](http://www.beyondlogic.org/usbnutshell/usb5.shtml#DeviceDescriptors)
 
-# Summary
+## Summary
 
 |                 Mode                  | Vendor ID | Product ID | Device ID | Serial No                             |
 | -------------------------------------:|:---------:|:----------:|:---------:|:------------------------------------- |
@@ -46,13 +47,13 @@ More information about the USB IDs can be found at the following places;
 |     0x4   | First production board.                            |
 |     0x5   | Production board.                                  |
 
-## Serial Number
+### Serial Number
 
 No serial number is provided in *[Failsafe Mode]* or *[Unconfigured Mode]*.
 
 In other modes, the serial number should be the MAC Address embedded in the EEPROM.
 
-# Failsafe Mode
+## Failsafe Mode
 
 If the [Cypress FX2] is unable to read from any EEPROM on boot it will boot
 into [Failsafe Booting].
@@ -65,7 +66,7 @@ into [Failsafe Booting].
 |   Serial No | None   |
 | Chip & Port | [USB Peripheral](/features/usb-peripheral.html), USB-B port on front. |
 
-# Unconfigured Mode
+## Unconfigured Mode
 
 If the FPGA is unable to provide the [Cypress FX2] with firmware, the FX2 will
 boot in [unconfigured mode].
@@ -79,7 +80,7 @@ boot in [unconfigured mode].
 | Chip & Port | [USB Peripheral](/features/usb-peripheral.html), USB-B port on front. |
 
 
-# USB-JTAG and USB-UART
+## USB-JTAG and USB-UART
 
 In this mode you can program the FPGA using the 
 [USB-JTAG](/getting-started/jtag.html)
@@ -104,7 +105,7 @@ The Device ID number is used to determine the mode the board is operating in.
 |     0x3   | CDC Serial UART mode                               |
 
 
-### HDMI2USB.tv Firmware
+## HDMI2USB.tv Firmware
 
 In this mode the device appears as a USB webcam and USB serial port.
 
@@ -114,7 +115,7 @@ In this mode the device appears as a USB webcam and USB serial port.
 |  Product ID | 0x5442 |
 | Chip & Port | [USB Peripheral](/features/usb-peripheral.html), USB-B port on front. |
 
-### Reserved for Customer Designs (FX2)
+## Reserved for Customer Designs (FX2)
 
 This USB ID is reserved for customer designs running on the 
 [USB Peripheral](/features/usb-peripheral.html) (Cypress FX2) connected to the
@@ -126,7 +127,7 @@ USB-B on the front of the board.
 |  Product ID | 0x5443 |
 | Chip & Port | [USB Peripheral](/features/usb-peripheral.html), USB-B port on front. |
 
-### Reserved for Customer Designs (OTG)
+## Reserved for Customer Designs (OTG)
 
 This USB ID is reserved for customer designs running on the 
 [USB OTG](/features/usb-otg.html) which is connected to the Micro-USB on back
