@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Numato Opsis : Power Supply</title>
+        <meta name="description" content="Developer Documentation">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div id="header" class="col-sm-12">
+                    <h4><a class="brand" href="/">Numato Opsis</a>
+    <small>Developer Documentation</small>
+</h4>
+    <div class="col-sm-12">
+        <div class="panel-default">
+            <div class="top-message" style="height: 66px; margin: 5px;">
+               <iframe src="https://planet.timvideos.us/numato-opsis-crowdfunding-campaign-master/badge.html" style="border: none; height: 66px; padding: 0; margin: 0; width: 100%;"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                
+                
+                    <div id="navigation" class="col-sm-2">
+                        <ul class="nav nav-list">
+    <li><a href="/">Home</a></li>
+    
+        
+        
+
+        
+            
+                <li class="nav-header">Getting Started</li>
+            
+            <li data-order=""><a href="/getting-started/case.html">Case</a></li>
+        
+            
+            <li data-order=""><a href="/getting-started/jtag.html">JTAG</a></li>
+        
+            
+            <li data-order="1"><a href="/getting-started/overview.html">Overview</a></li>
+        
+            
+            <li data-order=""><a href="/getting-started/power.html">Power Supply</a></li>
+        
+            
+            <li data-order=""><a href="/getting-started/uarts.html">UARTs</a></li>
+        
+            
+            <li data-order=""><a href="/getting-started/usb-ids.html">USB IDs</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class="nav-header">Features</li>
+            
+            <li data-order=""><a href="/features/clocks.html">Clocks</a></li>
+        
+            
+            <li data-order=""><a href="/features/ddr3.html">DDR3</a></li>
+        
+            
+            <li data-order=""><a href="/features/eeprom.html">Info EEPROM</a></li>
+        
+            
+            <li data-order=""><a href="/features/ethernet.html">Ethernet</a></li>
+        
+            
+            <li data-order=""><a href="/features/expansion-io.html">Expansion IO</a></li>
+        
+            
+            <li data-order=""><a href="/features/flash-memory.html">Flash Memory</a></li>
+        
+            
+            <li data-order=""><a href="/features/gtp-transceivers.html">GTP Transceivers</a></li>
+        
+            
+            <li data-order=""><a href="/features/hdmi-input.html">HDMI Input</a></li>
+        
+            
+            <li data-order=""><a href="/features/hdmi-output.html">HDMI Output</a></li>
+        
+            
+            <li data-order=""><a href="/features/usb-otg.html">USB OTG</a></li>
+        
+            
+            <li data-order=""><a href="/features/usb-peripheral.html">USB Peripheral</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class="nav-header">More Information</li>
+            
+            <li data-order=""><a href="/info/contact-us.html">Contact Numato</a></li>
+        
+            
+            <li data-order=""><a href="/info/license.html">License</a></li>
+        
+    
+    <li class="nav-header">Repositories</li>
+    <li><a href="https://github.com/timvideos/HDMI2USB-numato-opsis-sample-code">Sample Code</a></li>
+    <li><a href="https://github.com/timvideos/HDMI2USB-numato-opsis-hardware">Hardware Design</a></li>
+    <li><a href="https://github.com/timvideos/HDMI2USB-numato-opsis-docs">Docs</a></li>
+    <li><a href="https://github.com/timvideos/HDMI2USB-numato-opsis-hardware/raw/master/doc/Numato-Opsis-v3-prod-3-g83e7bd5.pdf">Schematic</a></li>
+    <li class="nav-header">Links</li>
+    <li><a href="http://bit.ly/get-opsis">Purchase</a></li>
+    <li><a href="http://hdmi2usb.tv">HDMI2USB Project</a></li>
+</ul>
+
+                    </div>
+
+                    <div id="content" class="col-sm-10">
+                        <div class="page-header">
+    <h2>Power Supply
+        
+    </h2>
+</div>
+
+<p>The primary power supply for the Opsis board is 12V DC. </p>
+
+<p>The board can draw up to 2 Amp under extreme conditions but will normally draw
+significantly less.</p>
+
+<p>TOFE expansion boards are also directly connected to this 12V supply which can
+increase the current requirements.</p>
+
+<h2 id="summary">Summary</h2>
+
+<ul>
+<li>Minimum: 12V DC @ 2A (24 Watts)</li>
+</ul>
+
+<hr>
+
+<h2 id="connectors">Connectors</h2>
+
+<p>There are two power supply connectors on the Opsis board. </p>
+
+<p><img src="/img/power/connectors.jpg" alt="Power Supply Diagram"></p>
+
+<p><span class="note-warning">
+Only <em>one</em> power supply connector should be used at once.
+</span></p>
+
+<p><br>
+<br>
+<br></p>
+
+<h3 id="barrel-connector">Barrel Connector</h3>
+
+<p><img src="/img/power/polarity.png" alt="Polarity"></p>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Specs</th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right">Labelled</td>
+<td>Con2</td>
+</tr>
+<tr>
+<td style="text-align: right">Inner Diameter</td>
+<td>2.0mm</td>
+</tr>
+<tr>
+<td style="text-align: right">Outer Diameter</td>
+<td>5.5mm</td>
+</tr>
+<tr>
+<td style="text-align: right">Inner Pin</td>
+<td>+12V</td>
+</tr>
+<tr>
+<td style="text-align: right">Outer Shield</td>
+<td>GND</td>
+</tr>
+</tbody></table>
+
+<p><br></p>
+
+<p><img src="/img/power/barrel.jpg" alt="Barrel Connector"></p>
+
+<hr>
+
+<p><br>
+<br>
+<br></p>
+
+<h3 id="pcie-6-pin-connector">PCIe 6-Pin Connector</h3>
+
+<table><thead>
+<tr>
+<th style="text-align: right">Specs</th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right">Labelled</td>
+<td>C12V-2</td>
+</tr>
+</tbody></table>
+
+<p><br></p>
+
+<p><img src="/img/power/pcie-6pin.jpg" alt="PCIe 6-Pin Connector"></p>
+
+<p><span class="note-warning">
+There are a number of power connectors which look similar to the PCIe 6-Pin
+which are <em>not</em> compatible with the Opsis board.
+</span></p>
+
+<p><img src="/img/power/standard-pcie-6pin.png" alt="PCIe 6-Pin Standard"></p>
+
+<p><img src="/img/power/pcie-6pin-plug.jpg" alt="PCIe 6-Pin Plug"></p>
+
+<hr>
+
+<p><br>
+<br>
+<br></p>
+
+<h2 id="extra-details">Extra Details</h2>
+
+<p>The 12V supply is not used directly by the board, instead converted to the
+various voltages needed by the ICs.</p>
+
+<p>There are numerous power converters on the board. These are highlighted in the
+following diagram;</p>
+
+<ul>
+<li>The output of each supply is highlighted by the yellow area.</li>
+</ul>
+
+<p><img src="/img/power/convert.jpg" alt="Power Converters"></p>
+
+<iframe src="https://docs.google.com/spreadsheets/d/1kLR7yQlwvc1OU9FH1j3vCp9KJMV8PBOriW9cUIGDIvM/pubhtml?widget=true&amp;headers=false"></iframe>
+
+<!-- References to pages -->
+
+<!-- Booting related references -->
+
+<!-- References to signals or pins -->
+
+<!-- Glossary of terms -->
+
+<!-- Wikipedia Links -->
+
+<!-- Project links -->
+
+
+                    </div>
+                
+            </div>
+
+            
+            <div class="row">
+              
+                <div id="navigation" class="col-sm-2"></div>
+                <div id="disqus" class="col-sm-10">
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'numato-opsis'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+                </div>
+              
+            </div>
+            
+
+            <div class="row">
+                <div id="footer" class="col-sm-12">
+                    Documentation for <a href="https://github.com/timvideos/HDMI2USB-numato-opsis-sample-code">Numato Opsis</a>. <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">work</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+                </div>
+            </div>
+        </div>
+
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23123757-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+        
+    </body>
+</html>

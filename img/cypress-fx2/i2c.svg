@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="629.05286"
+   height="787.38751"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="i2c.svg"
+   inkscape:export-filename="/usr/local/google/home/tansell/foss/timvideos/hdmi2usb/numato/HDMI2USB-numato-opsis-docs/img/cypress-fx2/i2c.png"
+   inkscape:export-xdpi="48.380001"
+   inkscape:export-ydpi="48.380001">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="493.44264"
+     inkscape:cy="74.167887"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="2556"
+     inkscape:window-height="1572"
+     inkscape:window-x="1080"
+     inkscape:window-y="344"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.539174,-5.354051)">
+    <g
+       id="g3813"
+       transform="translate(-30.304576,-39.395949)">
+      <rect
+         style="fill:#aade87;stroke:#008000;stroke-width:1.36714256"
+         y="45.423664"
+         x="34.528759"
+         height="247.12022"
+         width="282.98065"
+         id="rect2985" />
+      <flowRoot
+         transform="translate(-46.467017,-236.3757)"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         id="flowRoot2987"
+         xml:space="preserve"><flowRegion
+           id="flowRegion2989"><rect
+             y="286.66656"
+             x="90.913727"
+             height="131.31984"
+             width="200.01021"
+             id="rect2991" /></flowRegion><flowPara
+           id="flowPara2993">Cypress</flowPara><flowPara
+           id="flowPara3781">FX2</flowPara></flowRoot>    </g>
+    <g
+       id="g3807"
+       transform="translate(213.38369,-168.52216)">
+      <rect
+         style="fill:#f099ff;fill-opacity:1;stroke:#800080;stroke-width:0.60027754"
+         y="487.99213"
+         x="111.67454"
+         height="70.100243"
+         width="192.31892"
+         id="rect2985-5" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3783"
+         y="534.15393"
+         x="120.20815"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="534.15393"
+           x="120.20815"
+           id="tspan3785"
+           sodipodi:role="line">EEPROM</tspan><tspan
+           id="tspan3787"
+           y="584.15393"
+           x="120.20815"
+           sodipodi:role="line" /></text>
+    </g>
+    <g
+       id="g3825"
+       transform="translate(-54.548237,-47.47717)">
+      <rect
+         style="fill:#ffe680;stroke:#aa8800;stroke-width:1.36714256"
+         y="592.42126"
+         x="59.530041"
+         height="247.12022"
+         width="282.98065"
+         id="rect2985-51" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3821"
+         y="830.1286"
+         x="67.680222"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="830.1286"
+           x="67.680222"
+           id="tspan3823"
+           sodipodi:role="line">FPGA</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12.9211359px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="198.62723"
+       y="470.39267"
+       id="text3830"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3832"
+         x="198.62723"
+         y="470.39267">I2C Clock</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.22143364px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="94.046982"
+       y="469.88333"
+       id="text3834"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3836"
+         x="94.046982"
+         y="469.88333">I2C Data</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="307.81934"
+       y="110.45036"
+       id="text3838"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3840"
+         x="307.81934"
+         y="110.45036">I2C Master</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="330.97595"
+       y="312.90289"
+       id="text3842"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3844"
+         x="330.97595"
+         y="312.90289">I2C Slave</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="301.87222"
+       y="623.04291"
+       id="text3846"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3848"
+         x="301.87222"
+         y="623.04291">I2C Slave</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.61311436px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="559.20416"
+       y="312.19449"
+       id="text3850"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="559.20416"
+         y="312.19449"
+         id="tspan3854">I2C</tspan><tspan
+         sodipodi:role="line"
+         x="559.20416"
+         y="331.71088"
+         id="tspan3985">Address</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12.35886002px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="133.80524"
+       y="398.3136"
+       id="text3858"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3860"
+         x="133.80524"
+         y="398.3136">JFX2-SDA1 / P18</tspan><tspan
+         sodipodi:role="line"
+         x="133.80524"
+         y="413.76218"
+         id="tspan3862">Jumper</tspan></text>
+    <g
+       id="g3886"
+       transform="translate(-48.992398,-61.619305)">
+      <rect
+         y="383.6412"
+         x="130.30968"
+         height="58.588848"
+         width="23.233509"
+         id="rect3864"
+         style="fill:#cccccc;fill-opacity:1;stroke:#000000" />
+      <rect
+         y="398.52457"
+         x="93.377029"
+         height="5.2513809"
+         width="47.358341"
+         id="rect3866"
+         style="fill:#fef500;fill-opacity:1;stroke:#d1be15;stroke-width:0.78451359;stroke-opacity:1" />
+      <rect
+         y="419.40131"
+         x="92.993446"
+         height="5.2513809"
+         width="47.358341"
+         id="rect3866-5"
+         style="fill:#fef500;fill-opacity:1;stroke:#d1be15;stroke-width:0.78451359;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:none;stroke:#ff00ff;stroke-width:2.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0"
+       d="m 125.04927,336.67253 0,-15 -5,-2.5 10,-5 -10,-5 10,-5 -10,-5 10,-5 -5,-2.5 0,-15"
+       id="path3912" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:2.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0"
+       d="m 246.18707,345.04961 0,-15 -5,-2.5 10,-5 -10,-5 10,-5 -10,-5 10,-5 -5,-2.5 0,-15"
+       id="path3912-5" />
+    <path
+       style="fill:none;stroke:#ff00ff;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 157.85714,221.6479 0,115.71428 -60.178568,0"
+       id="path3956"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ff00ff;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 97.343261,360.54415 233.607119,0"
+       id="path3960"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ff00ff;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 158.08887,359.90261 0,204.55589"
+       id="path3962"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 194.28219,345.37149 136.46107,0"
+       id="path3960-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 194.07555,221.07703 0,343.3111"
+       id="path3962-9"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g3886-2"
+       transform="translate(496.32067,9.4265525)">
+      <rect
+         y="-405.74036"
+         x="-76.630707"
+         height="74.180878"
+         width="23.11125"
+         id="rect3864-5"
+         style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1.12225831"
+         transform="scale(-1,-1)" />
+      <rect
+         y="-375.20383"
+         x="-113.62449"
+         height="5.2513809"
+         width="47.358341"
+         id="rect3866-7"
+         style="fill:#fef500;fill-opacity:1;stroke:#d1be15;stroke-width:0.78451359;stroke-opacity:1"
+         transform="scale(-1,-1)" />
+      <rect
+         y="-354.32709"
+         x="-114.00806"
+         height="5.2513809"
+         width="47.358341"
+         id="rect3866-5-6"
+         style="fill:#fef500;fill-opacity:1;stroke:#d1be15;stroke-width:0.78451359;stroke-opacity:1"
+         transform="scale(-1,-1)" />
+      <rect
+         y="-392.70419"
+         x="-113.78707"
+         height="5.2513809"
+         width="47.358341"
+         id="rect3866-7-2"
+         style="fill:#fef500;fill-opacity:1;stroke:#d1be15;stroke-width:0.78451359;stroke-opacity:1"
+         transform="scale(-1,-1)" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12.35886002px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="632.60413"
+       y="434.01025"
+       id="text3858-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3860-2"
+         x="632.60413"
+         y="434.01025">JMAC-ADR / K1</tspan><tspan
+         sodipodi:role="line"
+         x="632.60413"
+         y="449.45883"
+         id="tspan3862-6">Jumper</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 565,381.29075 -55.35714,0"
+       id="path4058"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
