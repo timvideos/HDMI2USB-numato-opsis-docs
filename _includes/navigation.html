@@ -4,10 +4,8 @@
         {% assign attr = section[0] %}
         {% assign label = section[1] %}
 
+        <li class="nav-header">{{ label }}</li>
         {% for page in site.categories[attr] reversed %}
-            {% if forloop.first %}
-                <li class="nav-header">{{ label }}</li>
-            {% endif %}
             <li data-order="{{ page.order }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}
     {% endfor %}
