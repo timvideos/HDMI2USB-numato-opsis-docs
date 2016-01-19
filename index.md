@@ -6,7 +6,9 @@ disqus: 0
 
 # Numato Opsis
 
-The Numato Opsis is the first HDMI2USB production board developed specifically for the HDMI2USB project (as part of the TimVideos project).
+The Numato Opsis is the first HDMI2USB production board developed specifically
+for the [HDMI2USB] project (as part of the [TimVideos] project).
+
 
 ![Numato Opsis](img/numato-opsis.jpg)
 
