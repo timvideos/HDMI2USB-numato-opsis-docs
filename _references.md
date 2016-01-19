@@ -48,12 +48,12 @@
  [high definition]: https://en.wikipedia.org/wiki/High-definition_television
  [jitter]: https://en.wikipedia.org/wiki/Jitter 
 
- [HDMI 1.1]: 
- [HDMI 1.2]:
- [HDMI 1.3]:
- [DisplayPort 1.0]:
- [DisplayPort 1.2]:
- [DisplayPort 1.3]:
+ [HDMI 1.1]: <#>
+ [HDMI 1.2]: <#>
+ [HDMI 1.3]: <#>
+ [DisplayPort 1.0]: <#>
+ [DisplayPort 1.2]: <#>
+ [DisplayPort 1.3]: <#>
 
  [Gbit/s]: https://en.wikipedia.org/wiki/Data_rate_units#Gigabit_per_second  "Gigabits per second"
 
