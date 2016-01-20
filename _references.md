@@ -1,6 +1,7 @@
 
 <!-- References to pages -->
 
+ [Case]: /getting-started/case.html
  [USB Ids]: /getting-started/usb-ids.html
  [USB-JTAG]: /getting-started/jtag.html
 
@@ -11,8 +12,13 @@
  [USB OTG]: /features/usb-otg.html
 
 
+ [EEPROM]: /features/eeprom.html
  [MAC EEPROM]: /features/eeprom.html
+
  [FPGA SPI Flash]: /features/spi-flash.html
+
+ [HDMI2USB-mode-switch tool]: /getting-started/drivers.html
+ [Drivers]: /getting-started/drivers.html
 
 <!-- Booting related references -->
 
@@ -68,3 +74,5 @@
  [Mike Field]: http://hamsterworks.co.nz/mediawiki/index.php/FPGA_Projects
  [HamsterWorks]: http://hamsterworks.co.nz/mediawiki/index.php/FPGA_Projects
  [Enjoy Digital]: http://www.enjoy-digital.fr/
+
+ [hardware-repo]: https://github.com/timvideos/HDMI2USB-numato-opsis-hardware
