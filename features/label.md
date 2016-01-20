@@ -27,6 +27,14 @@ different size areas.
 
 ![Opsis Label Example](/img/label/large.jpg)
 
+![Label on Opsis box](/img/label/label-on-box.jpg)
+
+### Small Label
+
+![Label on Opsis board](/img/label/label-on-opsis.jpg)
+
+### Micro Labels
+
 ## Board Details
 
 ![Opsis Label Product section](/img/label/large-product.jpg)
