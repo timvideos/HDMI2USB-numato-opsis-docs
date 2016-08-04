@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Numato Opsis : Power Supply</title>
+        <title>Numato Opsis : Label</title>
         <meta name="description" content="Developer Documentation">
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -120,163 +120,114 @@
 
                     <div id="content" class="col-sm-10">
                         <div class="page-header">
-    <h1>Power Supply
+    <h1>Label
         
     </h1>
 
-<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li><a href="#summary"><span class="tocnumber">1</span> <span class="toctext">Summary</span></a></li><li><a href="#connectors"><span class="tocnumber">2</span> <span class="toctext">Connectors</span></a><ul><li><a href="#barrel-connector"><span class="tocnumber">2.1</span> <span class="toctext">Barrel Connector</span></a></li><li><a href="#pcie-6-pin-connector"><span class="tocnumber">2.2</span> <span class="toctext">PCIe 6-Pin Connector</span></a></li></ul></li><li><a href="#extra-details"><span class="tocnumber">3</span> <span class="toctext">Extra Details</span></a></li></ul></td></tr></tbody></table></div>
+<div id="toc-container"><table class="toc" id="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li><a href="#layout"><span class="tocnumber">1</span> <span class="toctext">Layout</span></a><ul><li><a href="#large-label"><span class="tocnumber">1.1</span> <span class="toctext">Large Label</span></a></li><li><a href="#small-label"><span class="tocnumber">1.2</span> <span class="toctext">Small Label</span></a></li><li><a href="#micro-labels"><span class="tocnumber">1.3</span> <span class="toctext">Micro Labels</span></a></li></ul></li><li><a href="#board-details"><span class="tocnumber">2</span> <span class="toctext">Board Details</span></a></li><li><a href="#device-dna"><span class="tocnumber">3</span> <span class="toctext">Device DNA</span></a></li><li><a href="#mac-address"><span class="tocnumber">4</span> <span class="toctext">MAC Address</span></a></li><li><a href="#reading-qr-codes"><span class="tocnumber">5</span> <span class="toctext">Reading QR Codes</span></a></li></ul></td></tr></tbody></table></div>
 
 </div>
 
 
-<p>The primary power supply for the Opsis board is 12V DC. </p>
+<p>The label attached to the Numato Opsis label contains important details about
+your device.</p>
 
-<p>The board can draw up to 2 Amp under extreme conditions but will normally draw
-significantly less.</p>
+<p>The details on the label found on the box <em>should</em> match the details of the
+label attached to other packaging and the board itself.</p>
 
-<p>TOFE expansion boards are also directly connected to this 12V supply which can
-increase the current requirements.</p>
-
-<h2 id="summary">Summary</h2>
-
-<ul>
-<li>Minimum: 12V DC @ 2A (24 Watts)</li>
-</ul>
-
-<hr />
-
-<h2 id="connectors">Connectors</h2>
-
-<p>There are two power supply connectors on the Opsis board. </p>
+<p>Spare labels where included in the Opsis packaging for when the board is
+mounted inside a <a href="/getting-started/case.html">Case</a>.</p>
 
 <p>
-  <img src="/img/power/connectors.jpg" alt="Power Supply Diagram" />
-</p>
-
-<p>
-  <span class="note-warning">
-Only <em>one</em> power supply connector should be used at once.
+  <span class="note-preproduction">
+The preproduction boards shipped without this label information. If you with to
+add it to your board, they can be generated using <a href="/getting-started/drivers.html">HDMI2USB-mode-switch tool</a>.
 </span>
 </p>
 
-<p><br />
-<br />
-<br /></p>
+<h2 id="layout">Layout</h2>
 
-<h3 id="barrel-connector">Barrel Connector</h3>
+<p>The Opsis label comes in a couple of different variants to allow it to fit in
+different size areas.</p>
 
-<p>
-  <img src="/img/power/polarity.png" alt="Polarity" />
-</p>
-
-<table>
-  <thead>
-<tr>
-<th style="text-align: right">Specs</th>
-<th></th>
-</tr>
-</thead>
-  <tbody>
-<tr>
-<td style="text-align: right">Labelled</td>
-<td>Con2</td>
-</tr>
-<tr>
-<td style="text-align: right">Inner Diameter</td>
-<td>2.0mm</td>
-</tr>
-<tr>
-<td style="text-align: right">Outer Diameter</td>
-<td>5.5mm</td>
-</tr>
-<tr>
-<td style="text-align: right">Inner Pin</td>
-<td>+12V</td>
-</tr>
-<tr>
-<td style="text-align: right">Outer Shield</td>
-<td>GND</td>
-</tr>
-</tbody>
-</table>
+<h3 id="large-label">Large Label</h3>
 
 <p>
-  <br />
+  <img src="/img/label/large.jpg" alt="Opsis Label Example" />
 </p>
 
 <p>
-  <img src="/img/power/barrel.jpg" alt="Barrel Connector" />
+  <img src="/img/label/label-on-box.jpg" alt="Label on Opsis box" />
 </p>
 
-<hr />
-
-<p><br />
-<br />
-<br /></p>
-
-<h3 id="pcie-6-pin-connector">PCIe 6-Pin Connector</h3>
-
-<table>
-  <thead>
-<tr>
-<th style="text-align: right">Specs</th>
-<th></th>
-</tr>
-</thead>
-  <tbody>
-<tr>
-<td style="text-align: right">Labelled</td>
-<td>C12V-2</td>
-</tr>
-</tbody>
-</table>
+<h3 id="small-label">Small Label</h3>
 
 <p>
-  <br />
+  <img src="/img/label/label-on-opsis.jpg" alt="Label on Opsis board" />
 </p>
+
+<h3 id="micro-labels">Micro Labels</h3>
+
+<h2 id="board-details">Board Details</h2>
 
 <p>
-  <img src="/img/power/pcie-6pin.jpg" alt="PCIe 6-Pin Connector" />
+  <img src="/img/label/large-product.jpg" alt="Opsis Label Product section" />
 </p>
+
+<p>The barcode is a <a href="https://en.wikipedia.org/wiki/Code_128">Code 128</a> which
+encodes the Opsis website and serves as a "product identification code".</p>
+
+<p>The short sequence of numbers is a 
+<a href="https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection#Short-SHA-1">short git hash</a>
+which refers to the revision in the 
+<a href="https://github.com/timvideos/HDMI2USB-numato-opsis-hardware">Numato Opsis hardware repository</a> that the PCB was generated
+from.</p>
+
+<p>This information is also embedded in the <a href="/features/eeprom.html">EEPROM</a> too.</p>
+
+<h2 id="device-dna">Device DNA</h2>
 
 <p>
-  <span class="note-warning">
-There are a number of power connectors which look similar to the PCIe 6-Pin
-which are <em>not</em> compatible with the Opsis board.
-</span>
+  <img src="/img/label/large-dna.jpg" alt="Opsis Label DNA section" />
 </p>
+
+<p>From <em>Spartan-6 FPGA Configuration User Guide UG380 (v2.7) October 29, 2014</em>
+</p><blockquote>
+Spartan-6 FPGAs contain an embedded, unique device identifier (device DNA). The
+identifier is nonvolatile, permanently programmed into the FPGA, and is unchangeable,
+making it tamper resistant.
+
+<p>As shown in Figure 5-14, the device DNA value is 57 bits long. The two most-significant
+bits are always 1 and 0. The remaining 55 bits are unique to a specific Spartan-6 FPGA.</p>
+
+<p>The FPGA's internal device identifier, plus any values shifted in on the DIN input, can be
+read via the JTAG port using the private ISC_DNA command. This requires the
+ISC_ENABLE to be loaded before the ISC_DNA command is issued.</p>
+
+<p>Bit 56 of the identifier, shown in Figure 5-14, appears on the TDO JTAG output following
+the ISC_DNA command when the device enters the Shift-DR state. The remaining Device
+DNA bits and any data on the input to the register are shifted out sequentially while the
+JTAG controller is left in the Shift-DR state. When this operation is complete, the
+ISC_DISABLE command should be issued.
+</p></blockquote>
+
+<h2 id="mac-address">MAC Address</h2>
+
+<p>Each Opsis board contains an EEPROM which is read only, a globally unique,
+Ethernet MAC address.</p>
+
+<p>This MAC address is printed on the label and encoded in the QR Code</p>
 
 <p>
-  <img src="/img/power/standard-pcie-6pin.png" alt="PCIe 6-Pin Standard" />
+  <img src="/img/label/large-mac.jpg" alt="Opsis Label MAC section" />
 </p>
 
-<p>
-  <img src="/img/power/pcie-6pin-plug.jpg" alt="PCIe 6-Pin Plug" />
-</p>
+<h2 id="reading-qr-codes">Reading QR Codes</h2>
 
-<hr />
+<p>Both the <a href="#device-dna">Device DNA</a> and the <a href="#mac-address">MAC Address</a> are
+encoded on the label using a <a href="https://en.wikipedia.org/wiki/QR_code">QR Code</a>.</p>
 
-<p><br />
-<br />
-<br /></p>
-
-<h2 id="extra-details">Extra Details</h2>
-
-<p>The 12V supply is not used directly by the board, instead converted to the
-various voltages needed by the ICs.</p>
-
-<p>There are numerous power converters on the board. These are highlighted in the
-following diagram;</p>
-
-<ul>
-<li>The output of each supply is highlighted by the yellow area.</li>
-</ul>
-
-<p>
-  <img src="/img/power/convert.jpg" alt="Power Converters" />
-</p>
-
-<iframe src="https://docs.google.com/spreadsheets/d/1kLR7yQlwvc1OU9FH1j3vCp9KJMV8PBOriW9cUIGDIvM/pubhtml?widget=true&amp;headers=false"></iframe>
+<p><a href="https://en.wikipedia.org/wiki/QR_code">QR Code</a>s are readable by a wide range of devices, including mobile phones.</p>
 
 <!-- References to pages -->
 
