@@ -62,7 +62,7 @@ Only *one* power supply connector should be used at once.
 <br>
 
 ![PCIe 6-Pin Connector](/img/power/pcie-6pin.jpg)
-![PCIe 6-Pin Opsis Pin Diagram](/img/power/pcie-6pin-opsis.png)
+![PCIe 6-Pin Opsis Pin Diagram](/img/power/standard-pcie-6pin-opsis.png)
 
 The Opsis can be powered by PCI Express connector from an ATX power supply.
 Sometimes called the "Graphics card connector".
