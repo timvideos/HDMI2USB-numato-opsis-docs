@@ -78,6 +78,7 @@ black wires are on the side <b>with</b> the clip.
 ![PCIe 6-Pin Cable Pin Diagram](/img/power/standard-pcie-6pin-cable.png)
 
 Do <b>not</b> try to use Opsis board with;
+
  * 6 Pin ATX Auxiliary power connector (which has orange and red cables).</li>
  * 8 Pin EPS connector (which has yellow and black cables).</li>
  * 4 Pin ATX 12V connector, also called "CPU Power" (which has yellow and black cables).</li>
