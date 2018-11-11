@@ -83,7 +83,7 @@ Do <b>not</b> try to use Opsis board with;
 
 ![PCIe 6-Pin Standard](/img/power/standard-pcie-6pin.png)
 
-![PCIe 6-Pin Plug](/img/power/pcie-6pin-plug.jpg)
+![PCIe 6-Pin Plug](/img/power/pcie-6pin-plug.png)
 
 <hr>
 <br>
