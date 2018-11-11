@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.92.2pre0 (973e216, 2017-07-25)"
-   sodipodi:docname="standard-pcie-6pin.svg"
+   sodipodi:docname="standard-pcie-6pin-cable.svg"
    inkscape:export-filename="standard-pcie-6pin.png"
    inkscape:export-xdpi="49.27"
    inkscape:export-ydpi="49.27">
@@ -45,9 +45,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="650.03102"
-     inkscape:cy="144.23102"
+     inkscape:zoom="0.43142361"
+     inkscape:cx="237.14286"
+     inkscape:cy="640.5835"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1025,5 +1025,10 @@ TkSuQmCC
        preserveAspectRatio="none"
        height="303.42856"
        width="343.16327" />
+    <path
+       style="fill:none;stroke:#b3b3b3;stroke-width:8.05316544;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M -255.89412,476.69336 H 228.47217"
+       id="path2033"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

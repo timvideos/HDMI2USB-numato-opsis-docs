@@ -62,6 +62,7 @@ Only *one* power supply connector should be used at once.
 <br>
 
 ![PCIe 6-Pin Connector](/img/power/pcie-6pin.jpg)
+![PCIe 6-Pin Opsis Pin Diagram](/img/power/pcie-6pin-opsis.png)
 
 The Opsis can be powered by PCI Express connector from an ATX power supply.
 Sometimes called the "Graphics card connector".
@@ -70,20 +71,18 @@ These connectors should have yellow and black wires going into them. Make sure
 black wires are on the side <b>with</b> the clip.
 
 <span class="note-warning">
-There are a number of power connectors which look similar to the PCIe 6-Pin
-which are <p>not</b> compatible with the Opsis board and can damage your board!
-<br>
-Do <b>not</b> try to use Opsis board with;
-<ul>
- <li>6 Pin ATX Auxiliary power connector (which has orange and red cables).</li>
- <li>8 Pin EPS connector (which has yellow and black cables).</li>
- <li>4 Pin ATX 12V connector, also called "CPU Power" (which has yellow and black cables).</li>
-</ul>
+ There are a number of power connectors which look similar to the PCIe 6-Pin
+ which are <p>not</b> compatible with the Opsis board and can damage your board!
+ <br>
+ Do <b>not</b> try to use Opsis board with;
+ <ul>
+  <li>6 Pin ATX Auxiliary power connector (which has orange and red cables).</li>
+  <li>8 Pin EPS connector (which has yellow and black cables).</li>
+  <li>4 Pin ATX 12V connector, also called "CPU Power" (which has yellow and black cables).</li>
+ </ul>
 </span>
 
-![PCIe 6-Pin Standard](/img/power/standard-pcie-6pin.png)
-
-![PCIe 6-Pin Plug](/img/power/pcie-6pin-plug.png)
+![PCIe 6-Pin Cable Pin Diagram](/img/power/standard-pcie-6pin-cable.png)
 
 <hr>
 <br>
